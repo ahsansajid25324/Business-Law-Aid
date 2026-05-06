@@ -1,0 +1,140 @@
+.sc-section {
+  width: 100%;
+  padding: 2rem 0 0 0;
+}
+
+/* Grid */
+.sc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* Card */
+.sc-card {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-top: 3.5px solid rgba(212, 165, 116, 1);
+  padding: 1.25rem;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+}
+
+.sc-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sc-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0rem;
+}
+
+.sc-card-title {
+  font-size: 1.5rem;
+  font-weight: 550;
+  color: #2c3e50;
+  max-width: 90%;
+}
+
+.sc-card-number {
+  font-size: 3rem;
+  color: rgba(212, 165, 116, 0.1);
+}
+
+.sc-card-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(74, 85, 101, 1);
+}
+
+.sc-card-icon {
+  width: 42px;
+  height: 42px;
+  background-color: rgba(15, 40, 52, 1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(198, 161, 100, 1);
+  margin-bottom: 1rem;
+}
+
+/* Splide */
+.splide {
+  padding-bottom: 3rem;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* Arrows */
+.splide__arrows {
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.splide__arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 165, 116, 0.4);
+  background: transparent;
+}
+
+
+
+.sc-testimonial {
+  background: rgba(7, 44, 44, 0.05);
+  border-left: 4px solid rgba(212, 165, 116, 1);
+  margin: 40px auto 0 auto;
+  padding: 32px 24px;
+  max-width: 900px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgba(54, 65, 83, 1);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.sc-testimonial p {
+  margin: 0;
+  font-style: italic;
+  color: #2d3748;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sc-card {
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .sc-section {
+    padding: 1rem 0 0 0;
+  }
+
+  .sc-testimonial {
+    margin-top: 16px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .sc-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,20 @@
+/* h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+p,
+ul,
+button,
+span {
+  font-family: "Inter", sans-serif;
+} */
+
+/* Apply Plus Jakarta Sans everywhere */
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}

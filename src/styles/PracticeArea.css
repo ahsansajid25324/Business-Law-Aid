@@ -1,0 +1,220 @@
+.practice-areas-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0 0 0;
+}
+
+.practice-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+.practice-area-card {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  min-height: 180px;
+  display: flex;
+  border-left: 4px solid rgba(212, 165, 116, 0.2);
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 1.5rem;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 550;
+  color: #2c3e50;
+
+  max-width: 70%;
+}
+
+.card-number {
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgba(212, 165, 116, 0.1);
+  line-height: 1;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: rgba(74, 85, 101, 1);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.practice-area-card:hover {
+  border-left: 4px solid #c89c5d;
+  background-color: rgba(249, 246, 238, 1);
+  .card-number {
+    color: rgba(212, 165, 116, 0.43);
+  }
+  .card-title {
+    color: rgba(212, 165, 116, 1);
+  }
+}
+
+.splide {
+  padding-bottom: 3rem;
+}
+
+/* Arrow container */
+.splide__arrows {
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+/* Arrow buttons */
+.splide__arrow {
+  position: static;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid rgba(212, 165, 116, 0.4);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.splide__arrow svg {
+  fill: grey !important;
+  width: 14px;
+  height: 14px;
+}
+
+.splide__arrow:hover {
+  background-color: rgba(212, 165, 116, 0.1);
+  border-color: #c89c5d;
+}
+
+.testimonial-box {
+  background: rgba(7, 44, 44, 0.05);
+  border-left: 4px solid rgba(212, 165, 116, 1);
+  margin: 40px auto 0 auto;
+  padding: 32px 24px;
+  max-width: 900px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgba(54, 65, 83, 1);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.testimonial-box p {
+  margin: 0;
+  font-style: italic;
+  color: #2d3748;
+}
+
+@media (max-width: 768px) {
+  .practice-areas-section {
+    padding: 0;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .practice-area-card {
+    background: #fff;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    border-left: 4px solid rgba(212, 165, 116, 0.2);
+    flex-direction: column;
+    min-height: 240px;
+    justify-content: start;
+    padding: 1rem 1rem;
+  }
+
+  .card-title {
+    font-size: 2rem;
+    font-weight: 500;
+    max-width: 80%;
+  }
+
+  .card-number {
+    font-size: 2.25rem;
+  }
+
+  .card-description {
+    font-size: 0.8rem;
+    color: rgba(74, 85, 101, 1);
+    max-width: 400px;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+  }
+
+  .practice-area-card:hover {
+    border-left: unset;
+    background-color: unset;
+    .card-number {
+      color: unset;
+    }
+    .card-title {
+      color: unset;
+    }
+  }
+
+  .testimonial-box {
+    margin: 16px auto 0 auto;
+    padding: 12px 6px;
+    max-width: 900px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .splide__slide.is-active .practice-area-card {
+    border-left: 4px solid #c89c5d;
+    background-color: rgba(249, 246, 238, 1);
+  }
+
+  .splide__slide.is-active .card-number {
+    color: rgba(212, 165, 116, 0.43);
+  }
+
+  .splide__slide.is-active .card-title {
+    color: rgba(212, 165, 116, 1);
+  }
+  .practice-area-card,
+  .card-number,
+  .card-title {
+    transition: border-left 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .splide__slide.is-active .practice-area-card {
+    box-shadow: 0 4px 24px rgba(200, 156, 93, 0.15);
+    transform: scale(1.03);
+  }
+}

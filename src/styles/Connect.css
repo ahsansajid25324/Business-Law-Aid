@@ -1,0 +1,164 @@
+.connect-section {
+  background-color: rgba(249, 246, 238, 1);
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.connect-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.connect-heading {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  max-width: 600px;
+}
+
+.connect-header {
+  margin: auto;
+  text-align: center;
+  justify-items: center;
+}
+
+.connect-card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 0rem auto;
+  border: 2px solid rgba(7, 44, 44, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.connect-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.connect-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: rgba(54, 65, 83, 1);
+}
+
+.connect-icon {
+  margin-top: 0.25rem;
+}
+
+.connect-divider {
+  border: none;
+  border-top: 1px solid grey;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.connect-action {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.connect-btn {
+  background: rgba(212, 165, 116, 1);
+  color: rgba(7, 44, 44, 1);
+  font-size: 1.1rem;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.connect-btn:hover {
+  background: rgba(238, 187, 111, 1);
+}
+
+.connect-note {
+  text-align: center;
+  color: #888;
+  font-size: 0.98rem;
+  margin-top: 0rem;
+}
+
+@media (max-width: 900px) {
+  .connect-section {
+    padding: 32px 16px;
+  }
+
+  .connect-heading {
+    margin-bottom: 0.5rem;
+  }
+
+  .connect-description {
+    margin-bottom: 1rem;
+  }
+
+  .connect-card {
+    padding: 1rem;
+  }
+
+  .connect-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .connect-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: rgba(54, 65, 83, 1);
+  }
+
+  .connect-icon {
+    margin-top: 0.25rem;
+  }
+
+  .connect-action {
+    margin-bottom: 0.5rem;
+  }
+  .connect-btn {
+    background: rgba(212, 165, 116, 1);
+    color: rgba(7, 44, 44, 1);
+    font-size: 1rem;
+    padding: 0.75rem 0;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 300;
+    display: flex;
+    gap: 0;
+    transition: background 0.2s;
+  }
+
+  .connect-note {
+    text-align: center;
+    color: #888;
+    font-size: 0.8rem;
+    margin-top: 0rem;
+  }
+}

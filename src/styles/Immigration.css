@@ -1,0 +1,352 @@
+.imm-support-section {
+  background-color: #fff;
+  padding: 2rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imm-support-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+
+  .main-heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+}
+
+.imm-support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.imm-reverse-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.imm-support-text h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0f2f2f;
+}
+
+.intro-text {
+  color: #5f6f73;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.imm-support-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 24px 0 16px;
+}
+
+/* LIST */
+.support-list {
+  list-style: none;
+  padding: 0;
+}
+
+.support-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #3f4f53;
+}
+
+.support-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #c89b6d;
+  font-weight: bold;
+}
+
+.law-firm-box {
+  background: rgba(249, 246, 238, 1);
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.law-firm-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.law-firm-box li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.law-firm-box li::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  color: #c89b6d;
+}
+
+/* RIGHT IMAGE */
+.imm-support-image {
+  position: relative;
+}
+
+.imm-support-image img {
+  width: 100%;
+  border-radius: 12px;
+  max-height: 440px;
+}
+
+.law-text {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.imm-testimonial {
+  background: rgba(7, 44, 44, 0.05);
+  border-left: 4px solid rgba(212, 165, 116, 1);
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(54, 65, 83, 1);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.imm-testimonial p {
+  margin: 0;
+  font-style: italic;
+  color: #2d3748;
+}
+
+.custom-card-image {
+  position: relative;
+  border-radius: 18px;
+  max-height: 440px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.custom-card-image img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.custom-card-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 20px 16px 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 30, 40, 0.85) 70%,
+    rgba(20, 30, 40, 0) 100%
+  );
+  color: #fff;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.custom-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #e2b47a;
+  color: rgba(7, 44, 44, 1);
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-weight: 300;
+  font-size: 0.9rem;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.custom-badge-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.custom-card-subtitle {
+  font-size: 0.9rem;
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.75;
+}
+
+@media (max-width: 900px) {
+  .imm-support-grid {
+    grid-template-columns: 1fr;
+    margin-top: 16px;
+    gap: 0;
+  }
+
+  .imm-reverse-grid {
+    grid-template-columns: 1fr;
+    margin-top: 16px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imm-support-image {
+    margin-top: 0;
+    width: 100%;
+    margin-top: 20px;
+    object-fit: contain;
+    height: 320px;
+  }
+
+  .custom-card-overlay {
+    padding: 10px 20px 20px 16px;
+  }
+
+  .custom-card-image img {
+    width: 100%;
+    display: block;
+    height: 320px;
+    height: 100%;
+    border-radius: 18px;
+  }
+
+  .custom-badge {
+    font-size: 0.85rem;
+    border-radius: 16px;
+    padding: 8px 14px;
+  }
+  .custom-card-subtitle {
+    font-size: 0.8rem;
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 0.75;
+  }
+
+  .imm-support-content {
+    flex-direction: column;
+    gap: 0;
+
+    .main-heading {
+      font-size: 2.4rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .imm-support-section {
+    padding: 0 16px 50px 16px;
+  }
+
+  /* LEFT TEXT */
+  .imm-support-text h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #0f2f2f;
+  }
+
+  .intro-text {
+    color: #5f6f73;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .imm-support-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 24px 0 16px;
+  }
+
+  /* LIST */
+  .support-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .support-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    color: #3f4f53;
+  }
+  .law-text {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .support-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #c89b6d;
+    font-weight: bold;
+  }
+
+  .law-firm-box {
+    background: #faf7f2;
+    padding: 16px;
+    margin-top: 0;
+  }
+
+  .law-firm-box ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .imm-testimonial {
+    background: rgba(7, 44, 44, 0.05);
+    border-left: 4px solid rgba(212, 165, 116, 1);
+    margin: 20px auto 0 auto;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(54, 65, 83, 1);
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .imm-testimonial p {
+    margin: 0;
+    font-style: italic;
+    color: #2d3748;
+  }
+
+  .law-firm-box li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+
+  .law-firm-box li::before {
+    content: "➜";
+    position: absolute;
+    left: 0;
+    color: #c89b6d;
+  }
+}

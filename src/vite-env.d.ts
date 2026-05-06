@@ -1,0 +1,4 @@
+/// <reference types="vite/client" />
+
+declare module "@splidejs/react-splide/css";
+declare module "@splidejs/react-splide";

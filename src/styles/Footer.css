@@ -1,0 +1,132 @@
+.footer {
+  background: rgba(5, 31, 31, 1);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 70px 70px 30px;
+}
+
+/* ===== GRID ===== */
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+/* ===== TEXT ===== */
+.footer-logo {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-col h3 {
+  color: #ffff;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+}
+
+.footer-col p {
+  max-width: 360px;
+  line-height: 1.7;
+  margin-top: 24px;
+}
+
+/* ===== LIST ===== */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+/* ===== SOCIAL ===== */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.footer a:hover,
+.footer .active a {
+  color: rgba(212, 165, 116, 1);
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  background: #ffffff;
+  color: #0b2222;
+}
+
+/* ===== BOTTOM ===== */
+.footer-bottom {
+  max-width: 1400px;
+  margin: 60px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .footer {
+    padding: 20px 16px 16px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+  .footer-col p {
+    margin-top: 12px;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 12px;
+  }
+  .footer-social {
+    margin-bottom: 16px;
+  }
+  /* ===== BOTTOM ===== */
+  .footer-bottom {
+    margin: 20px auto 0;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

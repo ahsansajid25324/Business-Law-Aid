@@ -1,0 +1,54 @@
+.touch-section {
+  background-color: #fff;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.touch-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.touch-heading {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  max-width: 600px;
+}
+
+.touch-header {
+  margin: auto;
+  text-align: center;
+  justify-items: center;
+}
+
+.touch-description {
+  color: rgba(54, 65, 83, 1);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  max-width: 750px;
+}
+
+@media (max-width: 900px) {
+  .touch-section {
+    padding: 32px 16px;
+  }
+
+  .touch-heading {
+    margin-bottom: 0.5rem;
+  }
+
+  .touch-description {
+    margin-bottom: 1rem;
+  }
+}
