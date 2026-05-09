@@ -2,21 +2,19 @@ import Footer from "../components/pages/Footer";
 import Immigration from "../components/pages/Immigration";
 import Navbar from "../components/pages/Navbar";
 import OtherHero from "../components/pages/OtherHero";
-import Practice from "../components/pages/Practice";
 import StartedSection from "../components/pages/StartedSection";
 import ServiceBg from "../assets/ServiceBg.png";
-import SubPractice from "../components/pages/SubPractice";
+
 const Services = () => {
   const heroData = {
-    subtitle: "OUR SERVICES",
-    title: "Immigration & Business Support Services",
+    subtitle: "OUR PROGRAMS & SERVICES",
+    title: "U.S. Corporate Setup & Expansion Consulting",
     description:
-      "Structured, scalable support designed exclusively for U.S. Immigration Attorneys/ law firms & foreign businesses-through reliable execution.",
+      "We provide the strategic, legal, and operational frameworks designed to help international brands and investors establish themselves and operate independently in the U.S. market.",
     stats: [
-      { number: "6", label: "Core Services" },
-      { number: "2500+", label: "Cases Delivered" },
-      { number: "100%", label: "Attorney-Controlled" },
-      { number: "400+", label: "Businesses Setup" },
+      { number: "400+", label: "Businesses Structured" },
+      { number: "100%", label: "Independent Operation" },
+      { number: "Global", label: "Expansion Scope" },
     ],
   };
 
@@ -31,13 +29,10 @@ const Services = () => {
         stats={heroData.stats}
       />
 
-      <Practice />
-      <SubPractice />
-
       <Immigration />
       <StartedSection
-        title="Ready to Scale Your Practice?"
-        subtitle="Partner with LawAid management to enhance your firm's capacity while maintaining complete control over legal strategy and client representation."
+        title="Ready to Scale Your Brand to the United States?"
+        subtitle="Partner with LawAid Management to build the legal, corporate, and structural frameworks needed for a successful and independent U.S. market entry."
       />
       <Footer />
     </>

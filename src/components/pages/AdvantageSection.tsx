@@ -29,39 +29,39 @@ const AdvantageSection = () => {
   const advantages = [
     {
       icon: <CheckCircle2 />,
-      title: "Hybrid Service Model",
+      title: "All-in-One Framework",
       description:
-        "Legal expertise, business acumen, and operational excellence unified in a single partnership",
+        "We coordinate your entire expansion strategy—from corporate entity setup to franchise system structuring.",
     },
     {
       icon: <Shield />,
-      title: "Compliance-Driven Workflows",
+      title: "Immigration-Compliant",
       description:
-        "Every deliverable structured to meet USCIS adjudication and evidentiary standards",
+        "Every corporate document and business plan is meticulously aligned with strict USCIS evidentiary standards.",
     },
     {
       icon: <Users />,
-      title: "Scalable Without Overhead",
+      title: "Franchise Readiness",
       description:
-        "Expand your firm's capacity without hiring, training, or infrastructure investment",
+        "We turn successful business models into turnkey, investor-ready franchise systems for the U.S. market.",
     },
     {
       icon: <TrendingUp />,
-      title: "Immigration-Specific Expertise",
+      title: "Market Transition Support",
       description:
-        "Deep knowledge of visa categories, regulatory updates, and case strategy",
+        "Tailored strategies to help established international brands successfully adapt to U.S. consumers.",
     },
     {
       icon: <Lock />,
-      title: "Absolute Confidentiality",
+      title: "Independent Operation",
       description:
-        "Attorney work-product privilege maintained with the highest professional standards",
+        "We build the structural runway, but you retain 100% ownership and operational control of your business.",
     },
     {
       icon: <Target />,
-      title: "Outcome-Focused Partnership",
+      title: "Strategic Coordination",
       description:
-        "Long-term strategic alignment with your firm's goals and client success",
+        "Deep collaboration with specialized partners to provide a seamless, hassle-free market entry.",
     },
   ];
 
@@ -72,14 +72,13 @@ const AdvantageSection = () => {
           <div className="subtitle-with-line">
             <span className="subtitle-line"></span>
             <span className="subtitle subtitle-right">
-              WHY LAWAID MANAGEMENT{" "}
+              WHY LAWAID MANAGEMENT
             </span>
             <span className="subtitle-line"></span>
           </div>
           <h2 className="main-heading">The LawAid Management Advantage</h2>
           <p className="advantage-description">
-            Law firms partner with LawAid management because we deliver reliable
-            execution without operational burden
+            Established global brands choose LawAid Management because we build the complete legal, corporate, and strategic foundation for U.S. market success.
           </p>
         </div>
 
@@ -123,27 +122,22 @@ const AdvantageSection = () => {
 
       <div className="container workflows-section">
         <div className="workflows-image">
-          <img src={WorkflowsImage} alt="Law Firm Workflows" />
+          <img src={WorkflowsImage} alt="Global Expansion Workflows" />
         </div>
         <div className="workflows-content">
-          <h2>Built for Immigration Attorneys</h2>
+          <h2>Simplifying Your Expansion Journey</h2>
           <p>
-            Our services integrate seamlessly into attorney-led practices,
-            enhancing capacity, consistency, and efficiency without compromising
-            legal authority, confidentiality, or compliance.
+            Our structural coordination services provide a seamless bridge to the United States, managing the complexities of entity formation, licensing frameworks, and investment setups.
           </p>
           <ul>
             <li>
-              <img src={Tick}></img>No operational burden, staffing overhead, or
-              infrastructure costs
+              <img src={Tick} alt="Check Icon" /> Completely transparent process with tailored engagement proposals
             </li>
             <li>
-              <img src={Tick}></img> Complete attorney control and client
-              confidentiality maintained
+              <img src={Tick} alt="Check Icon" /> Comprehensive legal, corporate, and structural coordination under one roof
             </li>
             <li>
-              <img src={Tick}></img> Scalable support aligned with your firm's
-              caseload and timeline
+              <img src={Tick} alt="Check Icon" /> Fully independent operation—you own, control, and run your brand
             </li>
           </ul>
         </div>
@@ -152,39 +146,33 @@ const AdvantageSection = () => {
       <div className="container px-0 imm-support-grid">
         {/* LEFT CONTENT */}
         <div className="imm-support-text">
-          <h3>Advantage For Foreign Businesses</h3>
+          <h3>Strategic Alignment for Global Brands</h3>
 
           <p className="intro-text">
-            International expansion often requires working with multiple
-            professionals and specialized service providers to ensure a
-            successful U.S. market entry.
+            Expanding into the United States typically requires business owners to manage and synchronize multiple disjointed professional services.
           </p>
 
           <p>
-            Navigating these requirements independently can be complex.
-            Typically, businesses may need to coordinate with:
+            Without strategic alignment, navigating corporate setup, franchising laws, and immigration requirements independently can lead to costly operational delays. Typically, businesses must coordinate with:
           </p>
 
           <ul className="support-list">
             <li>Immigration lawyers</li>
-            <li>Corporate consultants</li>
-            <li>Franchise advisors</li>
-            <li>Legal documentation specialists</li>
+            <li>Corporate structuring consultants</li>
+            <li>Franchise legal advisors</li>
+            <li>Business documentation specialists</li>
           </ul>
 
           <div className="law-firm-box bg-white">
             <p className="law-text">The LawAid Solution:</p>
             <p>
-              LawAid Management provides a <strong>structured platform</strong>{" "}
-              that helps coordinate these elements, allowing entrepreneurs to
-              navigate the expansion process more efficiently and with greater
-              strategic alignment.
+              LawAid Management acts as your single **structured platform**. We coordinate these critical elements to ensure that your legal, corporate, and investment strategies are completely aligned for an efficient U.S. market entry.
             </p>
           </div>
         </div>
         {/* RIGHT IMAGE */}
         <div className="imm-support-image custom-card-image">
-          <img src={"advantage.jpeg"} alt="Immigration Case Support" />
+          <img src={"advantage.jpeg"} alt="Structured Business Expansion" />
         </div>
       </div>
     </section>

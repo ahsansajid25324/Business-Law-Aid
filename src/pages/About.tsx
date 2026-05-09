@@ -5,18 +5,17 @@ import ExecutionSection from "../components/pages/ExecutionSection";
 import Professional from "../components/pages/Professional";
 import Vendor from "../components/pages/Vendor";
 import AboutBackground from "../assets/AboutBackground.png";
+
 const About = () => {
   const heroData = {
-    subtitle: "ABOUT US",
-    title: "Precision. Discipline. Accountability.",
+    subtitle: "ABOUT LAWAID MANAGEMENT",
+    title: "Structure. Coordination. Independence.",
     description:
-      "LawAid Management exists to strengthen attorney-led representation through structured legal support, immigration-aligned business services, and reliable execution at scale.",
+      "LawAid Management exists to simplify international expansion. We build the legal, corporate, and strategic frameworks that allow established international brands and investors to successfully expand and run their businesses independently in the United States.",
     stats: [
-      { number: "3+", label: "Years of Service" },
-      { number: "2500+", label: "Cases Delivered" },
-      { number: "20+", label: "Law Firms Partners" },
-      { number: "400+", label: "Businesses Setup" },
-      
+      { number: "400+", label: "Businesses Structured" },
+      { number: "100%", label: "Independent Operation" },
+      { number: "Global", label: "Expansion Scope" },
     ],
   };
 

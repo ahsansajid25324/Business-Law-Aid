@@ -4,6 +4,7 @@ import "@splidejs/react-splide/css";
 import "../../styles/Vendor.css";
 import "../../styles/HeroSection.css";
 import { Target, Shield, Scale, Briefcase } from "lucide-react";
+
 function useIsMobile() {
   const [isMobile, setIsMobile] = React.useState(window.innerWidth < 900);
 
@@ -22,27 +23,27 @@ const Vendor = () => {
   const vendors = [
     {
       icon: <Target />,
-      title: "Accuracy",
+      title: "Precision Structuring",
       description:
-        "Disciplined documentation and structured workflows ensure precision in every deliverable. Our systems are built to eliminate errors and maintain consistency across complex case portfolios.",
+        "Disciplined execution and structured workflows ensure absolute corporate precision. Our setups are built to align seamlessly with both complex state registration guidelines and federal corporate codes.",
     },
     {
       icon: <Shield />,
-      title: "Confidentiality",
+      title: "Compliant Frameworks",
       description:
-        "Strict data protection and ethical handling protocols safeguard client information. We maintain attorney-work product privilege and adhere to the highest standards of professional discretion.",
+        "We structure businesses with strict adherence to U.S. corporate regulations. Every operating agreement, licensing term, and documentation pathway is developed with clean corporate compliance at its core.",
     },
     {
       icon: <Scale />,
-      title: "Compliance",
+      title: "Immigration Alignment",
       description:
-        "Alignment with immigration standards and attorney oversight ensures every document meets regulatory requirements. Our work integrates seamlessly with USCIS adjudication frameworks.",
+        "Our strategic roadmaps integrate seamlessly with U.S. business immigration standards, ensuring your business setup cleanly supports visa pathways like E-2, L-1, or EB-5 without operational delays.",
     },
     {
       icon: <Briefcase />,
-      title: "Strategic Alignment",
+      title: "Strategic Coordination",
       description:
-        "Services tailored to firm goals and caseload realities. Whether supporting a solo attorney/ multi-attorney practice or a foreign business, our focus remains the same: reliable execution and measurable value.",
+        "Services tailored entirely to your expansion timeline and investment goals. We coordinate with specialized legal and financial partners to deliver a hassle-free transition into the U.S. market.",
     },
   ];
 
@@ -57,13 +58,13 @@ const Vendor = () => {
           </div>
 
           <h2 className="vendor-heading">
-            Long-Term Partner, Not Transactional Vendor
+            A Strategic Partner, Not a Transactional Agency
           </h2>
 
           <p className="vendor-description">
-            LawAid management operates as a long-term partner, not a transactional vendor.
-            Every engagement is guided by core principles that ensure reliable
-            execution, reduced burden, and measurable operational value.
+            LawAid Management operates as a committed long-term partner in your expansion journey. 
+            Every client engagement is guided by core structural principles that ensure compliant setup, 
+            reduced operational bottlenecks, and measurable value for international brands.
           </p>
         </div>
 
@@ -103,12 +104,12 @@ const Vendor = () => {
       </div>
       <div className="vendor-banner">
         <h2 className="vendor-banner-heading">
-          Reliable Execution. Reduced Burden. Measurable Value.
+          Reliable Execution. Structured Growth. Operational Freedom.
         </h2>
         <p className="vendor-banner-subheading">
-          Whether supporting a solo attorney/ multi-attorney practice or a foreign business move to the United States, our
-          focus remains the same: delivering operational excellence that
-          strengthens your firm's capacity & your presence in the U.S. to serve clients effectively.
+          Whether designing a direct expansion path for established business owners or structuring a turnkey franchise 
+          system for international investors, our focus remains exactly the same: providing the operational and 
+          corporate foundation to help you run your brand independently and successfully in the United States.
         </p>
       </div>
     </section>

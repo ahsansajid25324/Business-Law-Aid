@@ -13,40 +13,29 @@ const ExecutionSupportSection = () => {
           </div>
 
           <h2 className="main-heading">
-            Built to Bridge the Gap Between Legal Strategy and Reliable
-            Execution
+            Built to Bridge the Gap Between Expansion Strategy and Reliable Execution
           </h2>
 
           <p className="description">
-            LawAid management is a U.S - based Paralegal & business services consultancy formed over
-            three years ago to address a critical gap in the legal & business services
-            ecosystem: the disconnect between strategy and reliable
-            execution.
+            LawAid Management is a Houston, Texas-headquartered business immigration and global expansion consultancy. We established our firm to address a critical gap in the market entry ecosystem: the complex disconnect between strategic expansion plans and compliant corporate execution.
           </p>
 
           <p className="description">
-            We work extensively across the United States, partnering exclusively
-            with attorneys and law firms to support immigration, business, and
-            humanitarian legal matters.We also deal with helping out foreign businesses moved to the United States. LawAid management was built to strengthen
-            attorney-led representation by providing structured case support,
-            immigration-aligned business services, and operational consistency
-            at scale.
+            We work with established global brands, investors, and entrepreneurs to build structured investment pathways, coordinate corporate setups, and develop turnkey franchise licensing frameworks. By acting as the strategic bridge to the United States, we help businesses launch and scale their operations while ensuring absolute alignment with U.S. corporate regulations and business immigration standards.
           </p>
 
           <p className="description">
-            Our role is not advisory in theory—we exist to execute with
-            precision, discipline, and accountability within exclusively tailored
-            frameworks.
+            Our role is not to operate businesses ourselves. Instead, we exist to build the legal and structural pathways that allow businesses and investors to establish themselves, scale successfully, and operate independently in the U.S. market.
           </p>
         </div>
 
         <div className="execution-support-right">
-          <img src={Support} alt="Law Firm" className="main-image" />
+          <img src={Support} alt="U.S. Business Expansion" className="main-image" />
 
           <div className="exec-stats-card">
-            <h3 className="exec-stats-number text-dark">3+</h3>
+            <h3 className="exec-stats-number text-dark">400+</h3>
             <p className="exec-stats-description">
-              Years strengthening legal practices nationwide
+              Businesses structured and established in the United States
             </p>
           </div>
         </div>

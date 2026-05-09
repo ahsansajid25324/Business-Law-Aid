@@ -9,15 +9,13 @@ const LegalSection = () => {
         <div>
           <div className="d-flex align-items-center">
             <span className="subtitle-line"></span>
-            <span className="subtitle">WHAT WE SERVE</span>
+            <span className="subtitle">WHO WE SERVE</span>
           </div>{" "}
           <h2 className="main-heading">
-            Serving the Legal Profession{" "}
+            Built for Proven, Scalable Concepts
           </h2>
           <p className="legal-description">
-            LawAid management serves attorneys and law firms across
-            the United States. Each engagement is structured to align with your
-            practice focus, internal processes, timelines, and risk profile.
+            LawAid Management serves established global brands, investors, and business concepts that have the potential to scale successfully in the United States. Each engagement is structured to align with your concept, expansion goals, timeline, and operational structure.
           </p>
         </div>
       </div>

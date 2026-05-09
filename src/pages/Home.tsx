@@ -7,22 +7,19 @@ import LegalSupportSection from "../components/pages/LegalSupportSection";
 import Navbar from "../components/pages/Navbar";
 import SemiContact from "../components/pages/SemiContact";
 import StartedSection from "../components/pages/StartedSection";
-import SubLegal from "../components/pages/SubLegal";
 const Home = () => {
   return (
     <>
       <Navbar />
       <HeroSection />
       <LegalSupportSection />
-      <SubLegal />
 
       <LegalSection />
       <EndSection />
       <AdvantageSection />
       <StartedSection
-        title="Ready to Strengthen Your Firm's Capacity?"
-        subtitle="Partner with LawAid management to support your immigration, business, and
-            humanitarian cases with precision, consistency, and scale."
+        title="Ready to Scale Your Brand to the United States?"
+        subtitle="Partner with LawAid Management to build the legal, corporate, and structural frameworks needed for a successful and independent U.S. market entry."
       />
       <SemiContact />
       <Footer />

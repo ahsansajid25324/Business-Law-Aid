@@ -5,28 +5,28 @@ import "../../styles/PracticeArea.css";
 
 const practiceAreasData = [
   {
-    title: "Solo Immigration Attorneys",
+    title: "Restaurant Brands",
     number: "01",
     description:
-      "Individual practitioners seeking reliable case support and documentation services to scale their practice",
+      "Established dining concepts, quick-service models, and unique menus ready for U.S. consumer adaptation.",
   },
   {
-    title: "Boutique Immigration & Humanitarian Firms",
+    title: "Clothing & Fashion Labels",
     number: "02",
     description:
-      "Specialized practices requiring expert case preparation and research support",
+      "Distinctive fashion and lifestyle brands ready to capture market demand with brick-and-mortar setups.",
   },
   {
-    title: "Multi-Attorney Practices",
+    title: "Retail & Consumer Concepts",
     number: "03",
     description:
-      "Firms managing high-volume caseloads with complex procedural requirements",
+      "Proven, brick-and-mortar storefront formats and scalable retail models ready to cross international borders.",
   },
   {
-    title: "Immigration Specialists",
+    title: "Specialty Food & Beverage",
     number: "04",
     description:
-      "Firms handling complex or high volume cases",
+      "Unique consumer goods and localized dining experiences looking to establish a strong corporate U.S. footprint.",
   },
 ];
 
@@ -90,9 +90,8 @@ const PracticeAreas: React.FC = () => {
         <div className="testimonial-box">
           <p>
             <em>
-              Each engagement is structured to align with the firm's practice
-              focus, <span className="italic">internal processes</span>,
-              timelines
+              We provide the framework, but the operational control, training, and execution{" "}
+              <span className="italic">remain entirely in your hands</span> as independent business owners.
             </em>
           </p>
         </div>

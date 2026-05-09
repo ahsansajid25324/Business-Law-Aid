@@ -6,6 +6,7 @@ interface StartedSectionProps {
   title: string;
   subtitle: string;
 }
+
 const StartedSection = ({ title, subtitle }: StartedSectionProps) => {
   const navigate = useNavigate();
   return (
@@ -18,7 +19,7 @@ const StartedSection = ({ title, subtitle }: StartedSectionProps) => {
             <span className="subtitle-line"></span>
           </div>{" "}
           <h2 className="main-heading text-white">{title}</h2>
-          <p className="started-description text-white ">{subtitle}</p>
+          <p className="started-description text-white">{subtitle}</p>
         </div>
         <div className="hero-actions">
           <button

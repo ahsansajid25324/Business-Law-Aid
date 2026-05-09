@@ -3,6 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -10,7 +11,7 @@ const Footer = () => {
         {/* Column 1 */}
         <div className="footer-col footer-about">
           <img src={Logo} alt="LawAid Management Logo" />
-          <p>U.S.-based Paralegal & Business Consultation Services</p>
+          <p>Business Immigration & Global Expansion Consultancy</p>
 
           <div className="footer-social">
             <a
@@ -28,41 +29,26 @@ const Footer = () => {
 
         {/* Column 2 */}
         <div className="footer-col give-margin">
-          <h3>Services</h3>
+          <h3>Our Programs</h3>
           <ul className="cursor-pointer">
             <li>
-              <Link to="/services">Immigration Support</Link>
+              <Link to="/services">Direct Business Expansion</Link>
             </li>
-            <ul className="cursor-pointer">
-              <li>
-                <Link to="/services">Foreign Business Support</Link>
-              </li>
-            </ul>
-            <ul className="cursor-pointer">
-              <li>
-                <Link to="/services">Business Support</Link>
-              </li>
-            </ul>
-            <ul className="cursor-pointer">
-              <li>
-                <Link to="/services">Company Formation</Link>
-              </li>
-            </ul>
-            <ul className="cursor-pointer">
-              <li>
-                <Link to="/services">Business Acquisition</Link>
-              </li>
-            </ul>
-            <ul className="cursor-pointer">
-              <li>
-                <Link to="/services">Humanitarian Relief</Link>
-              </li>
-            </ul>
-            <ul className="cursor-pointer">
-              <li>
-                <Link to="/services">Legal Operations</Link>
-              </li>
-            </ul>
+            <li>
+              <Link to="/services">Franchise System Development</Link>
+            </li>
+            <li>
+              <Link to="/services">U.S. Corporate Structuring</Link>
+            </li>
+            <li>
+              <Link to="/services">Investment Pathways</Link>
+            </li>
+            <li>
+              <Link to="/services">Immigration-Compliant Design</Link>
+            </li>
+            <li>
+              <Link to="/services">Strategic Coordination</Link>
+            </li>
           </ul>
         </div>
 
@@ -73,9 +59,8 @@ const Footer = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
               <Link to="/services">Services</Link>
@@ -91,12 +76,12 @@ const Footer = () => {
 
         {/* Column 4 */}
         <div className="footer-col">
-          <h3>Legal</h3>
+          <h3>Compliance & Legal</h3>
           <ul>
             <li>Privacy Policy</li>
             <li>Terms of Service</li>
-            <li>Confidentiality Agreement</li>
-            <li>Professional Ethics</li>
+            <li>Engagement Agreement</li>
+            <li>Regulatory Compliance</li>
           </ul>
         </div>
       </div>
@@ -104,7 +89,7 @@ const Footer = () => {
       {/* Bottom */}
       <div className="footer-bottom">
         <p>© 2026 LawAid Management. All rights reserved.</p>
-        <p>Serving U.S. Law Firms & Foreign Businesses with Precision and Integrity</p>
+        <p>Connecting Established Businesses to Opportunities in the United States</p>
       </div>
     </footer>
   );

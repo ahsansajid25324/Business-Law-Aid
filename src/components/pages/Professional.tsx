@@ -7,56 +7,56 @@ const Professional = () => {
   const serviceCarouselData = [
     {
       icon: <CheckCircle2 />,
-      title: "Hybrid Service Model",
+      title: "All-in-One Framework",
       description:
-        "Legal expertise, business acumen, and operational excellence unified in a single partnership",
+        "Coordinating entity setup, corporate compliance, and structural design under a unified consulting partner.",
     },
     {
       icon: <Shield />,
-      title: "Compliance-Driven Workflows",
+      title: "Immigration Compliance",
       description:
-        "Every deliverable structured to meet USCIS adjudication and evidentiary standards",
+        "Every strategic roadmap and document is meticulously designed to satisfy strict U.S. regulatory standards.",
     },
     {
       icon: <Users />,
-      title: "Scalable Without Overhead",
+      title: "Turnkey Franchise Setup",
       description:
-        "Expand your firm's capacity without hiring, training, or infrastructure investment",
+        "Transforming established, profitable concepts into fully structured, investor-ready franchise systems.",
     },
     {
       icon: <TrendingUp />,
-      title: "Immigration-Specific Expertise",
+      title: "Operational Independence",
       description:
-        "Deep knowledge of visa categories, regulatory updates, and case strategy",
+        "Providing the structural runway so that you can retain 100% ownership and run your business on your terms.",
     },
   ];
+
   return (
     <section className="pro-section">
       <div className="container px-0 pro-content">
         <div>
-          <div className="subtitle-with-line  justify-content-center">
-            <span className="subtitle-line "></span>
+          <div className="subtitle-with-line justify-content-center">
+            <span className="subtitle-line"></span>
             <span className="subtitle subtitle-right text-center">
               WHAT WE DO
             </span>
             <span className="subtitle-line"></span>
           </div>{" "}
-          <h2 className="main-heading  text-center">
-            Professional Extension of Your Firm
+          <h2 className="main-heading text-center">
+            Strategic Infrastructure for Global Brands
           </h2>
           <p className="pro-description text-center">
-            LawAid management provides legal support services, business
-            advisory, and operational execution designed specifically for law
-            firm workflows. We do not replace legal counsel. Instead, we operate
-            as a professional extension of the firm—supporting attorneys by
-            strengthening case preparation, improving documentation quality, and
-            increasing operational efficiency.
+            LawAid Management helps established businesses explore opportunities
+            to expand into the United States. We do not run or manage daily operations
+            on behalf of our clients. Instead, we act as a structural coordination partner—building 
+            the legal, corporate, and strategic frameworks that allow entrepreneurs and investors 
+            to confidently establish themselves and operate independently in the U.S. market.
           </p>
         </div>
       </div>
       <ServiceCarousel
         data={serviceCarouselData}
-        testimonial="All work is performed strictly within permitted support functions, preserving attorney authority at every stage."
+        testimonial="We focus on building compliant, independent corporate foundations—keeping operational control entirely in your hands."
       />
 
       <div className="container px-0 imm-support-grid">
@@ -79,18 +79,16 @@ const Professional = () => {
           <div className="law-firm-box bg-white">
             <p className="law-text">Our work typically involves: </p>
             <ul>
-              <li>Coordinating legal documentation</li>
-              <li>Expansion strategy</li>
-              <li>Immigration considerations</li>
-              <li>
-                Corporate structuring required to support U.S. market entry
-              </li>
+              <li>Coordinating corporate & legal entity setup</li>
+              <li>Designing market entry & expansion roadmaps</li>
+              <li>Aligning setups with business immigration requirements</li>
+              <li>Structuring turnkey franchise and investor frameworks</li>
             </ul>
           </div>
         </div>
         {/* RIGHT IMAGE */}
         <div className="imm-support-image custom-card-image">
-          <img src={"role.jpg"} alt="Immigration Case Support" />
+          <img src={"role.jpg"} alt="Corporate Structuring Support" />
           <div className="custom-card-overlay"></div>
         </div>
       </div>

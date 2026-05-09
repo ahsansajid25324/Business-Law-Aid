@@ -1,7 +1,7 @@
 import "../../styles/LegalSupportSection.css";
 import Support from "../../assets/Support2.png";
 import "../../styles/HeroSection.css";
-import Confidentiality from "../../assets/Confidentaility.svg";
+import Confidentiality from "../../assets/Confidentaility.svg"; // Can keep the same icons as they match corporate themes
 import User from "../../assets/User.svg";
 import Compliance from "../../assets/Compliance.svg";
 
@@ -12,58 +12,48 @@ const LegalSupportSection = () => {
         <div className="legal-support-left">
           <div className="d-flex align-items-center">
             <span className="subtitle-line"></span>
-            <span className="subtitle">WHO WE ARE</span>
+            <span className="subtitle">U.S. MARKET ENTRY</span>
           </div>{" "}
           <h2 className="main-heading">
-            Structured Legal Support.Built for Law Firms.
+            Structured Global Expansion. Built for Established Brands.
           </h2>
           <p className="description">
-            LawAid management operates at the intersection of law, business, and
-            legal operations. We support attorneys and law firms by delivering
-            structured case preparation, immigration-aligned business
-            documentation, and dependable execution across complex legal
-            matters.
+            LawAid Management operates at the intersection of business immigration, corporate structuring, and international expansion. We support global business owners and investors by delivering structured expansion pathways, franchise frameworks, and dependable legal coordination across the U.S. market.
           </p>
           <p className="description">
-            Unlike traditional staffing solutions or paralegal services, LawAid
-            management is built specifically for law firm workflows. Our
-            services integrate seamlessly into attorney-led practices—enhancing
-            capacity, consistency, and efficiency without compromising legal
-            authority, confidentiality, or compliance.
+            Unlike traditional consulting firms, LawAid Management provides an all-in-one, integrated framework. Our services are built to establish the legal, corporate, and structural foundation of your company—enabling your brand to scale and operate independently in the United States.
           </p>
           <div className="features-list">
             <div className="feature-item">
               <div className="feature-icon">
-                <img src={Confidentiality} alt="Confidentiality Icon" />
+                <img src={Confidentiality} alt="Security Icon" />
               </div>
               <div className="feature-details">
-                <h3>Confidentiality First</h3>
+                <h3>Structured Frameworks</h3>
                 <p>
-                  Attorney-work product privilege maintained throughout every
-                  engagement
+                  Comprehensive corporate setups, LLC/C-Corp structures, and state registrations handled seamlessly.
                 </p>
               </div>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
-                <img src={User} alt="User Icon" />
+                <img src={User} alt="Independent Success Icon" />
               </div>
               <div className="feature-details">
-                <h3>Attorney-Centric Model</h3>
+                <h3>Independent Operation</h3>
                 <p>
-                  Designed to support, not replace, your legal expertise and
-                  judgment
+                  We build the pathways so that you can confidently own and operate your brand independently in the U.S.
                 </p>
               </div>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
-                <img src={Compliance} alt="Compliance Icon" />
+                <img src={Compliance} alt="USCIS Standards Icon" />
               </div>
               <div className="feature-details">
-                <h3>Compliance-Driven</h3>
+                <h3>Immigration & Compliance</h3>
                 <p>
-                  Every deliverable aligned with USCIS adjudication standards
+                  All corporate documentation meticulously aligned with business immigration and USCIS standards.
                 </p>
               </div>
             </div>
@@ -71,11 +61,11 @@ const LegalSupportSection = () => {
         </div>
 
         <div className="legal-support-right">
-          <img src={Support} alt="Law Firm" className="main-image" />
+          <img src={Support} alt="U.S. Corporate Office" className="main-image" />
           <div className="stats-card">
-            <h3 className="stats-number">2,500+</h3>
+            <h3 className="stats-number">400+</h3>
             <p className="stats-description">
-              Successful cases delivered to law firms nationwide
+              Established businesses successfully structured in the United States
             </p>
           </div>
         </div>

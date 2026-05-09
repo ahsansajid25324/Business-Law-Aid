@@ -26,71 +26,71 @@ const EndSection = () => {
   const isMobile = useIsMobile();
   const cardData = [
     {
-      icon: <img src={Icon2} alt="Humanitarian Relief Support icon" />,
-      title: "Immigration Case Support",
+      icon: <img src={Icon1} alt="International Expansion Consulting icon" />,
+      title: "International Expansion Consulting",
       description:
-        "Comprehensive preparation for immigrant & non-immigrant visa categories",
+        "Comprehensive operational strategies to transition global concepts into the U.S. market.",
       items: [
-        "Family-based petitions",
-        "Employment visas",
-        "Investment visas",
-        "Consular processing",
+        "Market viability evaluation",
+        "Scale & adaptation analysis",
+        "Expansion roadmap design",
+        "Operational framework setup",
       ],
     },
     {
-      icon: <img src={Icon1} alt="Humanitarian Relief Support icon" />,
-      title: "Business Plan Creation",
+      icon: <img src={Icon2} alt="Franchise System Development icon" />,
+      title: "Franchise Development",
       description:
-        "Immigration-compliant business plans for investor and entrepreneur visas",
+        "Structuring and formalizing successful brand models into turnkey franchise systems.",
       items: [
-        "E-2 Treaty Investor",
-        "EB-5 Immigrant Investor",
-        "L-1 Intracompany Transfer",
-        "Market analysis",
+        "Franchise licensing setup",
+        "Investor-ready documentation",
+        "Disclosure document support",
+        "Process standardization",
       ],
     },
     {
-      icon: <img src={Icon3} alt="Humanitarian Relief Support icon" />,
-      title: "Company Formation Support",
-      description: "Entity formation and structuring across all U.S. states",
+      icon: <img src={Icon3} alt="U.S. Corporate Structuring icon" />,
+      title: "U.S. Corporate Structuring",
+      description: "Establishing bulletproof legal and entity frameworks across all U.S. jurisdictions.",
       items: [
-        "Corporate structuring",
+        "LLC & C-Corp formation",
         "Operating agreements",
-        "Immigration compliance",
-        "State registration",
+        "State registrations & EIN",
+        "Corporate compliance setups",
       ],
     },
     {
-      icon: <img src={Icon4} alt="Humanitarian Relief Support icon" />,
-      title: "Business Acquisition Support",
-      description: "Strategic guidance for E-2 and L-1 visa business purchases",
+      icon: <img src={Icon4} alt="Investment Structuring Pathways icon" />,
+      title: "Investment Structuring",
+      description: "Securing and organizing funding channels to satisfy strategic expansion targets.",
       items: [
-        "Business identification",
-        "Due diligence support",
-        "Valuation analysis",
-        "Acquisition structuring",
+        "Capital flow organization",
+        "Ownership structure models",
+        "Financial viability frameworks",
+        "Escrow & transaction setups",
       ],
     },
     {
-      icon: <img src={Icon5} alt="Humanitarian Relief Support icon" />,
-      title: "Humanitarian Relief Support",
-      description: "Specialized case preparation for vulnerable populations",
+      icon: <img src={Icon5} alt="Immigration-Compliant Coordination icon" />,
+      title: "Immigration-Compliant Design",
+      description: "Meticulous documentation aligned with strict business immigration regulations.",
       items: [
-        "Asylum applications",
-        "VAWA petitions",
-        "U & T visas",
-        "TPS & CAT",
+        "USCIS-aligned business plans",
+        "Investment trail tracking",
+        "E-2, L-1, and EB-5 support docs",
+        "Regulatory file prep",
       ],
     },
     {
-      icon: <img src={Icon6} alt="Humanitarian Relief Support icon" />,
-      title: "Legal Operations Support",
-      description: "Comprehensive law firm operational services",
+      icon: <img src={Icon6} alt="Strategic Client Management icon" />,
+      title: "Strategic Coordination",
+      description: "End-to-end management from initial evaluation to final U.S. establishment.",
       items: [
-        "Case documentation",
-        "Research & analysis",
-        "Form preparation",
-        "Client communication",
+        "Project execution tracking",
+        "Partner legal team integration",
+        "Corporate milestone reviews",
+        "Independent owner handovers",
       ],
     },
   ];
@@ -104,12 +104,10 @@ const EndSection = () => {
             <span className="subtitle">CORE SERVICES</span>
           </div>{" "}
           <h2 className="main-heading text-white">
-            End-to-End Legal Support Services
+            Comprehensive Corporate & Expansion Solutions
           </h2>
           <p className="end-description text-white">
-            Comprehensive support designed to strengthen attorney-led
-            representation across immigration, business, and humanitarian
-            matters.
+            Providing the strategic, legal, and operational foundation that enables international businesses and investors to thrive independently in the United States.
           </p>
         </div>
 
