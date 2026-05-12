@@ -2,6 +2,7 @@ import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "../../styles/AdvantageSection.css";
+import adv from "../../assets/ww.jpg";
 import "../../styles/HeroSection.css";
 import Tick from "../../assets/tick.svg";
 import {
@@ -172,7 +173,7 @@ const AdvantageSection = () => {
         </div>
         {/* RIGHT IMAGE */}
         <div className="imm-support-image custom-card-image">
-          <img src={"advantage.jpeg"} alt="Structured Business Expansion" />
+          <img src={adv} alt="Structured Business Expansion" />
         </div>
       </div>
     </section>

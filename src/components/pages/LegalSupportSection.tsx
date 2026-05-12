@@ -1,5 +1,5 @@
 import "../../styles/LegalSupportSection.css";
-import Support from "../../assets/Support2.png";
+import Support from "../../assets/two.jpeg";
 import "../../styles/HeroSection.css";
 import Confidentiality from "../../assets/Confidentaility.svg"; // Can keep the same icons as they match corporate themes
 import User from "../../assets/User.svg";

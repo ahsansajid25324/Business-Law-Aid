@@ -2,7 +2,7 @@ import "../../styles/Professional.css";
 import "../../styles/HeroSection.css";
 import ServiceCarousel from "./ServiceCarousel";
 import { CheckCircle2, Shield, Users, TrendingUp } from "lucide-react";
-
+import prem from "../../assets/prem.jpeg"
 const Professional = () => {
   const serviceCarouselData = [
     {
@@ -88,7 +88,7 @@ const Professional = () => {
         </div>
         {/* RIGHT IMAGE */}
         <div className="imm-support-image custom-card-image">
-          <img src={"role.jpg"} alt="Corporate Structuring Support" />
+          <img src={prem} alt="Corporate Structuring Support" />
           <div className="custom-card-overlay"></div>
         </div>
       </div>
