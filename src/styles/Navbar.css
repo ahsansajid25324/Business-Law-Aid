@@ -140,18 +140,22 @@
   .mobile-toggle-btn {
     display: block;
   }
+
+  .nav-container {
+    padding: 0 16px;
+  }
 }
 
 .navigation-drawer {
   position: fixed;
   top: 0;
-  right: 0; /* was: -320px */
+  right: 0;
   width: 300px;
   height: 100vh;
   background: #0a192f;
   z-index: 1100;
   padding: 32px 24px;
-  transform: translateX(100%); /* start off-screen, no overflow */
+  transform: translateX(100%);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
@@ -159,7 +163,7 @@
 }
 
 .navigation-drawer.is-open {
-  transform: translateX(0); /* was: translateX(-320px) */
+  transform: translateX(0);
 }
 
 .drawer-inner-header {

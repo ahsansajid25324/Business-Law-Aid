@@ -1,8 +1,7 @@
-Premium Loading Spinner Styles
 .loader-container {
   min-height: 100vh;
   width: 100%;
-  background-color: var(--bg-surface);
+  background-color: var(--bg-surface, #0f0f11);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +14,8 @@ Premium Loading Spinner Styles
 .premium-spinner {
   width: 48px;
   height: 48px;
-  border: 2px solid rgba(255, 255, 255, 0.03);
-  border-top-color: var(--accent);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  border-top-color: var(--accent, #d4a574);
   border-radius: 50%;
   animation: spinnerRotate 1s cubic-bezier(0.16, 1, 0.3, 1) infinite;
   box-shadow: 0 0 15px rgba(212, 165, 116, 0.1);
@@ -30,7 +29,12 @@ Premium Loading Spinner Styles
     transform: rotate(360deg);
   }
 }
-html, body, #root {
+
+html,
+body,
+#root {
   overflow-x: hidden;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }

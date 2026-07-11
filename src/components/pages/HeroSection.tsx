@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { HiArrowUpRight } from "react-icons/hi2";
 import "../../styles/HeroSection.css";
 
-// Extend standard CSSProperties to allow custom animation delays safely
 interface CustomStyle extends React.CSSProperties {
   "--delay"?: string;
 }
