@@ -1,25 +1,9 @@
 import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
 import "../../styles/Vendor.css";
 import "../../styles/HeroSection.css";
 import { Award, Clock, Coins, RotateCcw } from "lucide-react";
 
-function useIsMobile() {
-  const [isMobile, setIsMobile] = React.useState(window.innerWidth < 900);
-
-  React.useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 900);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return isMobile;
-}
-
 const Vendor = () => {
-  const isMobile = useIsMobile();
-
   const vendors = [
     {
       icon: <Award size={22} />,
@@ -67,39 +51,18 @@ const Vendor = () => {
           </p>
         </div>
 
-        {isMobile ? (
-          <Splide
-            options={{
-              perPage: 1,
-              arrows: true,
-              pagination: false,
-              drag: "free",
-              type: "loop",
-            }}
-          >
-            {vendors.map((vendor, index) => (
-              <SplideSlide key={index}>
-                <div className="vendor-card">
-                  <div className="vendor-icon">{vendor.icon}</div>
-                  <h3 className="vendor-card-title">{vendor.title}</h3>
-                  <p className="vendor-card-description">
-                    {vendor.description}
-                  </p>
-                </div>
-              </SplideSlide>
-            ))}
-          </Splide>
-        ) : (
-          <div className="vendor-cards-grid">
-            {vendors.map((vendor, index) => (
-              <div key={index} className="vendor-card">
-                <div className="vendor-icon">{vendor.icon}</div>
+        {/* Clean semantic HTML grid container */}
+        <div className="vendor-cards-grid">
+          {vendors.map((vendor, index) => (
+            <div key={index} className="vendor-card">
+              <div className="vendor-icon">{vendor.icon}</div>
+              <div className="vendor-card-text">
                 <h3 className="vendor-card-title">{vendor.title}</h3>
                 <p className="vendor-card-description">{vendor.description}</p>
               </div>
-            ))}
-          </div>
-        )}
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="vendor-banner">

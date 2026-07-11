@@ -8,7 +8,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden; /* Safety barrier against horizontal layout blowout */
   box-sizing: border-box;
   border-top: 1px solid rgba(212, 165, 116, 0.1); 
 }
@@ -22,6 +22,7 @@
   flex-direction: column;
   gap: 48px;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .vendor-header {
@@ -71,13 +72,14 @@
   max-width: 680px;
 }
 
-/* Reconfigured cards matching Light Feature Item Logic */
+/* Base Desktop Grid configuration */
 .vendor-cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   width: 100%;
   max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .vendor-card {
@@ -87,7 +89,12 @@
   background: transparent;
   text-align: left;
   width: 100%;
+  box-sizing: border-box;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vendor-card-text {
+  flex: 1;
 }
 
 .vendor-icon {
@@ -130,7 +137,7 @@
   font-weight: 400;
 }
 
-/* Bottom Full-Width Banner matching the Deep Navy Bento card theme */
+/* Bottom Full-Width Banner */
 .vendor-banner {
   background: linear-gradient(145deg, #0a192f 0%, #061020 100%);
   border: 1px solid rgba(212, 165, 116, 0.15);
@@ -143,9 +150,9 @@
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(5, 5, 8, 0.35);
   text-align: center;
+  box-sizing: border-box;
 }
 
-/* Ambient Subtle Radial Glow Effect inside banner */
 .vendor-banner::before {
   content: "";
   position: absolute;
@@ -174,7 +181,7 @@
   max-width: 800px;
 }
 
-/* Responsive Adaptive Viewports */
+/* --- RESPONSIVE ADAPTIVE VIEWPORTS --- */
 @media (max-width: 1024px) {
   .vendor-content {
     gap: 40px;
@@ -189,9 +196,11 @@
     padding: 50px 0px;
   }
   
+  /* CRITICAL: Switches from 2 columns to a single column stack cleanly on mobile */
   .vendor-cards-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 32px;
+    padding: 24px 16px;
   }
 
   .vendor-banner {
@@ -206,13 +215,13 @@
   }
   
   .vendor-card {
-    flex-direction: column;
-    gap: 14px;
+    flex-direction: row; /* Keeps layout inline, or change to 'column' if preferred */
+    gap: 16px;
   }
   
   .vendor-icon {
-    width: 44px;
-    height: 44px;
+    width: 46px;
+    height: 46px;
     border-radius: 10px;
   }
 

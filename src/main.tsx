@@ -5,10 +5,14 @@ import App from "./App.tsx";
 import "@splidejs/react-splide/css";
 import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
+import "@splidejs/react-splide/css";
+import "./styles/Vendor.css";
+import "./styles/HeroSection.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );
