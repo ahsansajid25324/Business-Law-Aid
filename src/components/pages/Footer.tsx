@@ -29,7 +29,7 @@ const Footer = () => {
 
         {/* Column 2 */}
         <div className="footer-col give-margin">
-          <h3>Our Programs</h3>
+          {/* <h3>Our Programs</h3>
           <ul className="cursor-pointer">
             <li>
               <Link to="/services">Direct Business Expansion</Link>
@@ -49,12 +49,12 @@ const Footer = () => {
             <li>
               <Link to="/services">Strategic Coordination</Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         {/* Column 3 */}
         <div className="footer-col">
-          <h3>Company</h3>
+          <h3>Navigation</h3>
           <ul>
             <li>
               <Link to="/">Home</Link>
