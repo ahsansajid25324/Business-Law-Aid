@@ -17,7 +17,7 @@ const HeroSection = () => {
         {/* Editorial Text Column */}
         <div className="hero-narrative-block">
           <div className="tagline-badge animate-item" style={{ "--delay": "100ms" } as CustomStyle}>
-            <span className="badge-dot"></span>
+            {/* <span className="badge-dot"></span> */}
             GLOBAL EXPANSION & BUSINESS IMMIGRATION
           </div>
           
