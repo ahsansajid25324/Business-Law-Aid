@@ -104,6 +104,7 @@
 .hero-main-title span {
   background: linear-gradient(135deg, var(--text-main) 30%, var(--accent) 100%);
   -webkit-background-clip: text;
+  background-clip: text; /* Added standard property for full browser compatibility */
   -webkit-text-fill-color: transparent;
 }
 
@@ -238,6 +239,7 @@
   font-weight: 700;
   background: linear-gradient(120deg, var(--text-main) 40%, var(--accent));
   -webkit-background-clip: text;
+  background-clip: text; /* Added standard property for full browser compatibility */
   -webkit-text-fill-color: transparent;
   line-height: 1;
   margin-bottom: 6px;
