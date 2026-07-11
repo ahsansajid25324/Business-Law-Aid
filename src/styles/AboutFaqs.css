@@ -1,0 +1,133 @@
+/* About Page Accordion Stylesheet */
+.about-faq-section {
+  background-color: #fdfbf7; /* Consistent Luxury Warm Off-White */
+  padding: 40px 0 100px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.about-faq-container {
+  width: 100%;
+  max-width: 850px; /* Centered tight editorial scanning lane */
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.faq-header {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-main-heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0f2137;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin: 12px 0 0 0;
+}
+
+.faq-accordion-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.faq-accordion-node {
+  background-color: #ffffff;
+  border: 1px solid rgba(186, 146, 102, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(186, 146, 102, 0.04);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-accordion-node:hover {
+  border-color: #ba9266;
+  box-shadow: 0 8px 24px rgba(186, 146, 102, 0.08);
+}
+
+.faq-accordion-node.active-node {
+  border-color: #ba9266;
+  box-shadow: 0 12px 30px rgba(186, 146, 102, 0.1);
+}
+
+.faq-trigger {
+  width: 100%;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px;
+  text-align: left;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0f2137;
+  cursor: pointer;
+  gap: 24px;
+  transition: color 0.3s ease;
+}
+
+.faq-trigger:hover {
+  color: #ba9266;
+}
+
+.faq-icon-wrapper {
+  color: #ba9266;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.faq-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0 28px;
+}
+
+.faq-panel.panel-expanded {
+  max-height: 350px; /* Allows safe scrolling content expansion limit */
+  padding-bottom: 28px;
+}
+
+.faq-panel-text {
+  color: #4a5568;
+  line-height: 1.75;
+  font-size: 1rem;
+  margin: 0;
+  border-top: 1px solid rgba(186, 146, 102, 0.1);
+  padding-top: 16px;
+}
+
+/* Responsive Structural Breakdown */
+@media (max-width: 768px) {
+  .faq-main-heading {
+    font-size: 2rem;
+  }
+  
+  .faq-trigger {
+    padding: 20px;
+    font-size: 1.05rem;
+  }
+
+  .faq-panel {
+    padding: 0 20px;
+  }
+
+  .faq-panel.panel-expanded {
+    padding-bottom: 20px;
+  }
+  
+  .about-faq-section {
+    padding: 20px 0 64px 0;
+  }
+}

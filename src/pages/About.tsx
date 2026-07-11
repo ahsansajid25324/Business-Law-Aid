@@ -1,11 +1,15 @@
+import { useState } from "react";
 import Navbar from "../components/pages/Navbar";
 import OtherHero from "../components/pages/OtherHero";
-
 import Vendor from "../components/pages/Vendor";
 import Footer from "../components/pages/Footer";
 import AboutBackground from "../assets/AboutBackground.png";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import "../styles/AboutFaqs.css";
 
 const About = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   const heroData = {
     subtitle: "ABOUT LAWAID MANAGEMENT",
     title: "Built for your petition, not pulled from a template",
@@ -16,6 +20,29 @@ const About = () => {
       { number: "Houston", label: "Operations Base" },
       { number: "USCIS", label: "Specific Design" },
     ],
+  };
+
+  const faqData = [
+    {
+      question: "What is the core story and mission behind Law Aid Management?",
+      answer:
+        "We started with a simple observation. Too many immigration business plans were either cheap generic templates or expensive reports overloaded with filler and disconnected from actual petition strategy. Firms needed something better. Our model is built around premium quality, cleaner workflow, and immigration specific expertise. That means every plan is written around how the case will be reviewed, not how a generic startup plan is usually formatted.",
+    },
+    {
+      question:
+        "Why are immigration business plans structurally different from standard setups?",
+      answer:
+        "USCIS reviews business plans differently from lenders, investors, or startup accelerators. Officers look for operational realism, credible hiring assumptions, internal consistency, and direct support for the legal standards at issue. That is why our process is built around evidentiary logic rather than generic narrative polish alone.",
+    },
+    {
+      question: "What is the strategic process for constructing every plan?",
+      answer:
+        "Our execution pipeline breaks down into four clear structural phases: 1. Case review and intake to identify filing goals and evidentiary pressure points. 2. Market and operations development connecting industry realities, customer metrics, and growth tracks. 3. Financial modeling built on accurate payroll and operational costs. 4. Detailed review and optimization based on direct attorney feedback.",
+    },
+  ];
+
+  const toggleFaq = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
@@ -29,6 +56,55 @@ const About = () => {
         stats={heroData.stats}
       />
       <Vendor />
+
+      {/* Structured Accordion FAQ Section */}
+      <section className="about-faq-section">
+        <div className="about-faq-container">
+          <div className="faq-header">
+            <div className="subtitle-with-line justify-content-center">
+              <span className="subtitle-line"></span>
+              <span className="subtitle">DEEP DIVE DETAILS</span>
+              <span className="subtitle-line"></span>
+            </div>
+            <h2 className="faq-main-heading text-center">
+              Frequently Explored Insights
+            </h2>
+          </div>
+
+          <div className="faq-accordion-group">
+            {faqData.map((item, index) => {
+              const isOpen = openIndex === index;
+              return (
+                <div
+                  key={index}
+                  className={`faq-accordion-node ${isOpen ? "active-node" : ""}`}
+                >
+                  <button
+                    className="faq-trigger"
+                    onClick={() => toggleFaq(index)}
+                    aria-expanded={isOpen}
+                  >
+                    <span>{item.question}</span>
+                    <span className="faq-icon-wrapper">
+                      {isOpen ? (
+                        <ChevronUp size={18} />
+                      ) : (
+                        <ChevronDown size={18} />
+                      )}
+                    </span>
+                  </button>
+                  <div
+                    className={`faq-panel ${isOpen ? "panel-expanded" : ""}`}
+                  >
+                    <p className="faq-panel-text">{item.answer}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
