@@ -1,10 +1,5 @@
-/* ... [Keep all your original layout, sizing, and styling rules identical] ... */
-
 .hero-landing-pane {
   background-color: var(--bg-surface);
-
-  /* Layered Background: Micro-mesh grid lines + Dual-zone premium ambient glows */
-  /* ENHANCEMENT: Added subtle background drift via animation */
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
@@ -92,7 +87,9 @@
   letter-spacing: 1.5px;
   width: fit-content;
   margin-bottom: 24px;
-  transition: border-color 0.3s, background 0.3s;
+  transition:
+    border-color 0.3s,
+    background 0.3s;
 }
 
 /* ENHANCEMENT: Hover effect for badge */
@@ -223,13 +220,17 @@
 
 /* Ambient glow accent behind the featured card */
 .cell-featured::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -20%;
   right: -20%;
   width: 140px;
   height: 140px;
-  background: radial-gradient(circle, rgba(212, 165, 116, 0.08) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(212, 165, 116, 0.08) 0%,
+    transparent 70%
+  );
   pointer-events: none;
   transition: transform 0.8s ease;
 }
@@ -312,10 +313,18 @@
 
 @keyframes ambientGlowDrift {
   0% {
-    background-position: 0px 0px, 0px 0px, 85% 30%, 15% 85%;
+    background-position:
+      0px 0px,
+      0px 0px,
+      85% 30%,
+      15% 85%;
   }
   100% {
-    background-position: 0px 0px, 0px 0px, 80% 35%, 20% 80%;
+    background-position:
+      0px 0px,
+      0px 0px,
+      80% 35%,
+      20% 80%;
   }
 }
 
@@ -333,18 +342,43 @@
 
 /* ... [Keep all responsive media queries identical] ... */
 @media (max-width: 1200px) {
-  .hero-main-title { font-size: 3rem; }
+  .hero-main-title {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 992px) {
-  .hero-grid-container { grid-template-columns: 1fr; gap: 48px; text-align: left; }
-  .hero-summary-paragraph { max-width: 100%; }
-  .hero-main-title { font-size: 2.8rem; }
+  .hero-grid-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: left;
+  }
+  .hero-summary-paragraph {
+    max-width: 100%;
+  }
+  .hero-main-title {
+    font-size: 2.8rem;
+  }
 }
 @media (max-width: 576px) {
-  .hero-main-title { font-size: 2.2rem; }
-  .hero-landing-pane { padding-top: calc(var(--header-height) + 20px); }
-  .hero-action-cluster { flex-direction: column; width: 100%; }
-  .btn-solid, .btn-outline { width: 100%; justify-content: center; }
-  .hero-bento-visual { grid-template-columns: 1fr; }
-  .cell-featured { grid-column: span 1; }
+  .hero-main-title {
+    font-size: 2.2rem;
+  }
+  .hero-landing-pane {
+    padding-top: calc(var(--header-height) + 20px);
+  }
+  .hero-action-cluster {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-solid,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-bento-visual {
+    grid-template-columns: 1fr;
+  }
+  .cell-featured {
+    grid-column: span 1;
+  }
 }
