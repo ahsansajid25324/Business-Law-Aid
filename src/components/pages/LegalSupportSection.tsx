@@ -70,15 +70,32 @@ const LegalSupportSection = () => {
           </div>
         </div>
 
-        {/* Right Side: Showcase Card with deep depth and contrast */}
+        {/* Right Side: Enhanced Multi-Card Grid using Nav/Hero Dark Palette */}
         <div className="legal-support-right animate-item" style={{ "--delay": "300ms" } as CustomStyle}>
-          <div className="stats-showcase-card">
-            <span className="card-badge">APPLICATION DESIGN</span>
-            <h3 className="stats-number-title">Designed for Review</h3>
-            <div className="divider-line"></div>
-            <p className="stats-description-text">
-              USCIS aligned structures, realistic projections, and growth-ready strategic planning—built for review, not decoration.
-            </p>
+          <div className="legal-bento-grid">
+            
+            {/* Featured Hero Card */}
+            <div className="bento-card card-dark card-featured">
+              <span className="card-badge-dark">APPLICATION DESIGN</span>
+              <h3 className="stats-number-title-dark">Designed for Review</h3>
+              <div className="divider-line-gold"></div>
+              <p className="stats-description-text-dark">
+                USCIS aligned structures, realistic projections, and growth-ready strategic planning—built for review, not decoration.
+              </p>
+            </div>
+
+            {/* Stat Card 1 */}
+            <div className="bento-card card-dark card-stat">
+              <div className="stat-metric">98%</div>
+              <div className="stat-label">Adjudication Alignment</div>
+            </div>
+
+            {/* Stat Card 2 */}
+            <div className="bento-card card-dark card-stat">
+              <div className="stat-metric">3x</div>
+              <div className="stat-label">Faster Drafting Cycles</div>
+            </div>
+
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
   background-image: 
     radial-gradient(circle at 90% 10%, rgba(212, 165, 116, 0.05) 0%, transparent 60%),
     radial-gradient(circle at 10% 80%, rgba(10, 25, 47, 0.02) 0%, transparent 50%);
-  padding: 120px 0;
+  padding: 60px 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  border-top: 1px solid rgba(212, 165, 116, 0.1); /* Subtle premium horizon line from the dark hero section */
+  border-top: 1px solid rgba(212, 165, 116, 0.1); 
 }
 
 .legal-support-container {
@@ -42,7 +42,7 @@
 .subtitle-line {
   width: 24px;
   height: 2px;
-  background-color: #c59b6d; /* Classic mid-gold */
+  background-color: #c59b6d; 
 }
 
 .subtitle-tag {
@@ -56,14 +56,14 @@
 .main-heading {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #0f2137; /* Deep, authoritative corporate slate */
+  color: #0f2137; 
   line-height: 1.25;
   letter-spacing: -1px;
   margin: 0 0 24px 0;
 }
 
 .description {
-  color: #4a5568; /* Highly scannable charcoal mid-tone */
+  color: #4a5568; 
   line-height: 1.75;
   font-size: 1.05rem;
   margin-bottom: 20px;
@@ -102,7 +102,6 @@
 .feature-icon img {
   width: 22px;
   height: 22px;
-  /* Adjusts dark SVGs to seamlessly fit the premium golden tone contextually */
   filter: sepia(0.6) saturate(1.5) hue-rotate(350deg) brightness(0.4);
 }
 
@@ -129,67 +128,106 @@
   max-width: 540px;
 }
 
-/* Right Column: High Contrast Pure White Floating Card */
+/* Right Column: Deep Luxury Navy Bento Grid Layout */
 .legal-support-right {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
+  flex-direction: column;
   width: 100%;
 }
 
-.stats-showcase-card {
+.legal-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   width: 100%;
-  max-width: 440px;
-  background: #ffffff;
-  border: 1px solid rgba(15, 33, 55, 0.04);
+}
+
+/* Deep Navy/Black Card Styling derived from Nav/Hero Palette */
+.bento-card.card-dark {
+  background: linear-gradient(145deg, #0a192f 0%, #061020 100%);
+  border: 1px solid rgba(212, 165, 116, 0.15);
   border-radius: 24px;
   padding: 34px;
   position: relative;
-  box-shadow: 
-    0 4px 6px rgba(15, 33, 55, 0.01),
-    0 20px 50px rgba(15, 33, 55, 0.06); /* Luxurious smooth shadow step down */
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(5, 5, 8, 0.35);
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.stats-showcase-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 
-    0 4px 6px rgba(15, 33, 55, 0.01),
-    0 30px 60px rgba(186, 146, 102, 0.12);
+.bento-card.card-dark:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212, 165, 116, 0.5);
+  box-shadow: 0 24px 50px rgba(212, 165, 116, 0.12);
 }
 
-.card-badge {
+/* Ambient Subtle Radial Glow Effect inside cards */
+.bento-card.card-dark::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: -30%;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.card-featured {
+  grid-column: span 2;
+}
+
+.card-badge-dark {
   font-size: 0.7rem;
   font-weight: 700;
-  color: #ba9266;
+  color: #d4a574; /* Matches hero accent gold */
   letter-spacing: 1.5px;
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 18px;
 }
 
-.stats-number-title {
+.stats-number-title-dark {
   font-size: 2.3rem;
   font-weight: 700;
-  color: #0f2137;
+  color: #ffffff;
   line-height: 1.25;
   margin: 0 0 20px 0;
   letter-spacing: -0.5px;
 }
 
-.divider-line {
+.divider-line-gold {
   width: 45px;
   height: 2px;
-  background-color: #ba9266;
+  background-color: #d4a574;
   margin-bottom: 24px;
 }
 
-.stats-description-text {
-  color: #5a6578;
+.stats-description-text-dark {
+  color: rgba(255, 255, 255, 0.7);
   font-size: 1.05rem;
   line-height: 1.7;
   margin: 0;
+}
+
+/* Stat-specific elements */
+.stat-metric {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(120deg, #ffffff 40%, #d4a574);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 /* Responsive Structural Adjustments */
@@ -204,27 +242,30 @@
 
 @media (max-width: 900px) {
   .legal-support-section {
-    padding: 60px 0px;
+    padding: 50px 0px;
   }
   
   .legal-support-container {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 48px;
   }
 
-  .legal-support-right {
-    justify-content: flex-start;
-  }
-
-  .stats-showcase-card {
-    max-width: 100%;
-    padding: 20px;
+  .bento-card.card-dark {
+    padding: 28px;
   }
 }
 
 @media (max-width: 576px) {
   .main-heading {
     font-size: 2rem;
+  }
+
+  .legal-bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-featured {
+    grid-column: span 1;
   }
   
   .feature-item {
