@@ -1,3 +1,4 @@
+import React from "react";
 import "../../styles/OtherHero.css";
 
 interface Stat {
@@ -5,12 +6,15 @@ interface Stat {
   label: string;
 }
 
+interface CustomStyle extends React.CSSProperties {
+  "--delay"?: string;
+}
+
 interface OtherHeroProps {
   subtitle: string;
   title: string;
   description: string;
-  backgroundImage: string;
-
+  backgroundImage?: string; // Optional now since we use the luxury premium background colors
   stats?: Stat[];
 }
 
@@ -18,40 +22,54 @@ const OtherHero = ({
   subtitle,
   title,
   description,
-  backgroundImage,
   stats,
 }: OtherHeroProps) => (
-  <>
-    <div
-      className="other-landing-container"
-      style={{
-        background: `url(${backgroundImage}) center/cover no-repeat`,
-        backgroundColor: "rgba(10, 61, 61, 1)",
-      }}
-    >
-      <div className="container px-0  other-hero-section">
-        <div className="subtitle-with-line flex-column ">
-          <div className="d-flex align-items-center">
-            {" "}
-            <span className="subtitle-line"></span>
-            <span className="subtitle subtitle-right">{subtitle}</span>
-            <span className="subtitle-line"></span>
-          </div>
-          <h1 className="text-center">{title}</h1>
-          <p className="text-center">{description}</p>
+  <section className="other-landing-pane">
+    <div className="other-grid-container">
+      <div className="other-hero-section">
+        
+        {/* Subtitle / Tagline */}
+        <div 
+          className="tagline-badge animate-item"
+          style={{ "--delay": "100ms" } as CustomStyle}
+        >
+          <span className="badge-text">{subtitle}</span>
         </div>
 
-        <div className="other-stats text-center justify-content-center">
-          {stats?.map((stat, index) => (
-            <div key={index}>
-              <span className="stat-number">{stat.number}</span>
-              <span className="stat-label">{stat.label}</span>
-            </div>
-          ))}
-        </div>
+        {/* Main Title */}
+        <h1 
+          className="other-hero-title animate-item"
+          style={{ "--delay": "250ms" } as CustomStyle}
+        >
+          {title}
+        </h1>
+
+        {/* Description Paragraph */}
+        <p 
+          className="other-summary-paragraph animate-item"
+          style={{ "--delay": "400ms" } as CustomStyle}
+        >
+          {description}
+        </p>
+
+        {/* Premium Minimal Stats Layout */}
+        {stats && stats.length > 0 && (
+          <div 
+            className="other-stats-cluster animate-item"
+            style={{ "--delay": "550ms" } as CustomStyle}
+          >
+            {stats.map((stat, index) => (
+              <div key={index} className="other-stat-node">
+                <span className="other-stat-num">{stat.number}</span>
+                <span className="other-stat-desc">{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
       </div>
     </div>
-  </>
+  </section>
 );
 
 export default OtherHero;

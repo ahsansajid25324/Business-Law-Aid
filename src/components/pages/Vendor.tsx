@@ -3,7 +3,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "../../styles/Vendor.css";
 import "../../styles/HeroSection.css";
-import { Target, Shield, Scale, Briefcase } from "lucide-react";
+import { Award, Clock, Coins, RotateCcw } from "lucide-react";
 
 function useIsMobile() {
   const [isMobile, setIsMobile] = React.useState(window.innerWidth < 900);
@@ -22,28 +22,28 @@ const Vendor = () => {
 
   const vendors = [
     {
-      icon: <Target />,
-      title: "Precision Structuring",
+      icon: <Award size={22} />,
+      title: "Predictable Quality",
       description:
-        "Disciplined execution and structured workflows ensure absolute corporate precision. Our setups are built to align seamlessly with both complex state registration guidelines and federal corporate codes.",
+        "Every single business plan is built precisely around evidentiary logic, legal framework criteria, and specific USCIS requirements to ensure unmatched documentation rigor.",
     },
     {
-      icon: <Shield />,
-      title: "Compliant Frameworks",
+      icon: <Clock size={22} />,
+      title: "Fast Turnaround",
       description:
-        "We structure businesses with strict adherence to U.S. corporate regulations. Every operating agreement, licensing term, and documentation pathway is developed with clean corporate compliance at its core.",
+        "Engineered with a reliable 5-7 days turnaround process that allows legal teams and businesses to hit critical petition filing milestones without friction.",
     },
     {
-      icon: <Scale />,
-      title: "Immigration Alignment",
+      icon: <Coins size={22} />,
+      title: "Realistic Financial Logic",
       description:
-        "Our strategic roadmaps integrate seamlessly with U.S. business immigration standards, ensuring your business setup cleanly supports visa pathways like E-2, L-1, or EB-5 without operational delays.",
+        "Revenue, payroll, scaling costs, and hiring goals are modeled to reflect actual industry realities rather than inflated spreadsheet optimism.",
     },
     {
-      icon: <Briefcase />,
-      title: "Strategic Coordination",
+      icon: <RotateCcw size={22} />,
+      title: "Responsive Revisions",
       description:
-        "Services tailored entirely to your expansion timeline and investment goals. We coordinate with specialized legal and financial partners to deliver a hassle-free transition into the U.S. market.",
+        "We offer highly collaborative and unlimited revisions up until your final submission date, ensuring total alignment with attorney strategies.",
     },
   ];
 
@@ -53,18 +53,17 @@ const Vendor = () => {
         <div className="vendor-header">
           <div className="subtitle-with-line">
             <span className="subtitle-line"></span>
-            <span className="subtitle subtitle-right ">OUR APPROACH</span>
+            <span className="subtitle subtitle-right">WHY LAW FIRMS CHOOSE US</span>
             <span className="subtitle-line"></span>
           </div>
 
           <h2 className="vendor-heading">
-            A Strategic Partner, Not a Transactional Agency
+            Reducing Documentation Friction Across Repeat Filings
           </h2>
 
           <p className="vendor-description">
-            LawAid Management operates as a committed long-term partner in your expansion journey. 
-            Every client engagement is guided by core structural principles that ensure compliant setup, 
-            reduced operational bottlenecks, and measurable value for international brands.
+            Law Aid Management works directly with legal practitioners and global investors to prepare 
+            strategically precise materials built around how actual adjudication officers evaluate cases.
           </p>
         </div>
 
@@ -102,14 +101,14 @@ const Vendor = () => {
           </div>
         )}
       </div>
+
       <div className="vendor-banner">
         <h2 className="vendor-banner-heading">
-          Reliable Execution. Structured Growth. Operational Freedom.
+          Our Commitment to Quality
         </h2>
         <p className="vendor-banner-subheading">
-          Whether designing a direct expansion path for established business owners or structuring a turnkey franchise 
-          system for international investors, our focus remains exactly the same: providing the operational and 
-          corporate foundation to help you run your brand independently and successfully in the United States.
+          We do not sell volume-based filler. We build clear, strategically useful documents 
+          that can successfully withstand detailed attorney feedback and deep USCIS scrutiny.
         </p>
       </div>
     </section>

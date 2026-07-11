@@ -1,156 +1,181 @@
-.other-landing-container {
-  /* background: url("../assets/AboutBackground.png") center/cover no-repeat; */
-  /* background-color: rgba(7, 44, 44, 1); */
-  height: 100vh;
+.other-landing-pane {
+  background-color: #0a192f;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(212, 165, 116, 0.1) 0%,
+      transparent 60%
+    );
+  background-size: 45px 45px, 45px 45px, 100% 100%;
+  animation: ambientGlowDrift 20s ease-in-out infinite alternate;
+
+  min-height: 80vh;
+  width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Luxury vignette overlay */
+.other-landing-pane::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    transparent 40%,
+    rgba(5, 5, 8, 0.4) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.other-grid-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
 }
 
 .other-hero-section {
-  padding: 100px 0 50px 0;
-  width: 100%;
-  justify-items: center;
-}
-.consult-btn {
-  background: rgba(212, 165, 116, 1);
-  color: #1a2a2a;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 28px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.consult-btn:hover {
-  background: rgba(238, 187, 111, 1);
-}
-
-.subtitle-with-line {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Base class for cinematic reveals */
+.animate-item {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: premiumFadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: var(--delay, 0ms);
+}
+
+/* Tagline / Subtitle Badge matching the first hero style */
+.tagline-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #d4a574; /* var(--accent) match */
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #d4a574;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #d4a574;
+  animation: pulse 2s infinite;
+}
+
+/* Typography styles matching the luxury layout */
+.other-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff; /* var(--text-main) match */
+  letter-spacing: -1.5px;
+  margin: 0 0 24px 0;
+  max-width: 800px;
+}
+
+.other-summary-paragraph {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #8892b0; /* var(--text-muted) match */
+  margin: 0 0 48px 0;
+  max-width: 680px;
+}
+
+/* Stats Row styling using the premium text rules */
+.other-stats-cluster {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 40px;
+}
+
+.other-stat-node {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.subtitle-line {
-  display: inline-block;
-  height: 2px;
-  width: 42px;
-  background: rgba(212, 165, 116, 1);
-  margin-right: 12px;
-  border-radius: 2px;
+.other-stat-num {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(120deg, #ffffff 40%, #d4a574);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 8px;
 }
 
-.subtitle {
-  color: #c9a96a;
-  font-size: 0.8rem;
-  letter-spacing: 4px;
-  font-weight: 500;
+.other-stat-desc {
+  font-size: 0.75rem;
+  color: #8892b0;
   text-transform: uppercase;
-  opacity: 0.95;
-}
-.other-hero-section h1 {
-  font-size: 3.2rem;
-  font-weight: 800;
-  margin: 6px 0 18px 0;
-  max-width: 800px;
-  line-height: 1.2;
-  color: rgba(255, 255, 255, 1);
-}
-
-.other-hero-section p {
-  font-size: 1.1rem;
-  margin-bottom: 24px;
-  color: rgba(255, 255, 255, 0.8);
-  max-width: 600px;
-}
-
-.stats {
-  display: flex;
-  gap: 60px;
-  margin-top: 30px;
-}
-
-.stat-number {
-  font-size: 2rem;
+  letter-spacing: 1px;
   font-weight: 500;
-  color: rgba(212, 165, 116, 1);
-  display: block;
 }
 
-.stat-label {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
-  margin-top: -4px;
+/* Keyframes copied directly over from your primary hero setup */
+@keyframes premiumFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
+@keyframes ambientGlowDrift {
+  0% { background-position: 0px 0px, 0px 0px, 50% 30%; }
+  100% { background-position: 0px 0px, 0px 0px, 52% 28%; }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(212, 165, 116, 0.5); }
+  70% { box-shadow: 0 0 0 8px rgba(212, 165, 116, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 165, 116, 0); }
+}
+
+/* Responsive updates */
 @media (max-width: 768px) {
-  .other-landing-container {
-    padding: 0 16px 0 16px;
-    height: auto;
+  .other-hero-title {
+    font-size: 2.5rem;
   }
-  .other-hero-section {
-    padding: 90px 0 40px 0;
-    width: 100%;
+  
+  .other-stats-cluster {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 32px;
   }
-
-  /* sa */
-
-  .subtitle-with-line {
-    display: flex;
-    align-items: center;
-  }
-
-  .subtitle-line {
-    height: 2px;
-    width: 26px;
-  }
-
-  .subtitle {
-    color: #c9a96a;
-    font-size: 0.75rem;
-    letter-spacing: 4px;
-    font-weight: 500;
-    text-transform: uppercase;
-    opacity: 0.95;
-  }
-  .other-hero-section h1 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    width: 100%;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    margin: 6px 0 6px 0;
-    line-height: 1.2;
-
-    color: rgba(255, 255, 255, 1);
-  }
-
-  .other-hero-section p {
-    font-size: 1rem;
-    margin-bottom: 18px;
-    color: rgba(255, 255, 255, 0.8);
-    max-width: 700px;
-  }
-
-  .stats {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    margin-top: 16px;
-  }
-
-  .stat-number {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: rgba(212, 165, 116, 1);
-    display: block;
-  }
-
-  .stat-label {
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.6);
-    display: block;
-    margin-top: -4px;
+  
+  .other-landing-pane {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    min-height: auto;
   }
 }

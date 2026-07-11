@@ -1,21 +1,20 @@
-import Footer from "../components/pages/Footer";
 import Navbar from "../components/pages/Navbar";
 import OtherHero from "../components/pages/OtherHero";
-import ExecutionSection from "../components/pages/ExecutionSection";
-import Professional from "../components/pages/Professional";
+
 import Vendor from "../components/pages/Vendor";
+import Footer from "../components/pages/Footer";
 import AboutBackground from "../assets/AboutBackground.png";
 
 const About = () => {
   const heroData = {
     subtitle: "ABOUT LAWAID MANAGEMENT",
-    title: "Structure. Coordination. Independence.",
+    title: "Built for your petition, not pulled from a template",
     description:
-      "LawAid Management exists to simplify international expansion. We build the legal, corporate, and strategic frameworks that allow established international brands and investors to successfully expand and run their businesses independently in the United States.",
+      "Founded in 2023, Law Aid Management operates from Houston and serves immigration related business plan clients with a focused commitment to USCIS specific planning rather than generic commercial plan writing.",
     stats: [
-      { number: "400+", label: "Businesses Structured" },
-      { number: "100%", label: "Independent Operation" },
-      { number: "Global", label: "Expansion Scope" },
+      { number: "2023", label: "Founded In" },
+      { number: "Houston", label: "Operations Base" },
+      { number: "USCIS", label: "Specific Design" },
     ],
   };
 
@@ -29,8 +28,6 @@ const About = () => {
         description={heroData.description}
         stats={heroData.stats}
       />
-      <ExecutionSection />
-      <Professional />
       <Vendor />
       <Footer />
     </>
