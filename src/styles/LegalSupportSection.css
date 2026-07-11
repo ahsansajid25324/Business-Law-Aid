@@ -1,9 +1,7 @@
 /* Premium Light Contrasting Theme (Alabaster & Rich Slate/Warm Gold) */
 .legal-support-section {
   background-color: #fdfbf7; /* Warm luxury gallery off-white */
-  background-image: 
-    radial-gradient(circle at 90% 10%, rgba(212, 165, 116, 0.05) 0%, transparent 60%),
-    radial-gradient(circle at 10% 80%, rgba(10, 25, 47, 0.02) 0%, transparent 50%);
+
   padding: 60px 0;
   width: 100%;
   display: flex;
