@@ -1,7 +1,7 @@
 /* ... [Keep all your original layout, sizing, and styling rules identical] ... */
 
 .hero-landing-pane {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-surface);
 
   /* Layered Background: Micro-mesh grid lines + Dual-zone premium ambient glows */
   /* ENHANCEMENT: Added subtle background drift via animation */
