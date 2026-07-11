@@ -1,82 +1,73 @@
 import { useNavigate } from "react-router-dom";
+import { HiArrowUpRight } from "react-icons/hi2";
 import "../../styles/HeroSection.css";
 
 const HeroSection = () => {
   const navigate = useNavigate();
-  return (
-    <div className="landing-container">
-      {/* Premium Background Ambient Glows */}
-      <div className="ambient-glow glow-1"></div>
-      <div className="ambient-glow glow-2"></div>
 
-      <div className="container px-3 hero-wrapper">
-        {/* Left Side: Content */}
-        <div className="hero-content">
-          <div className="d-flex align-items-center mb-2 mb-md-3">
-            <span className="subtitle-line"></span>
-            <span className="subtitle">
-              BUSINESS IMMIGRATION & GLOBAL EXPANSION CONSULTANCY
-            </span>
+  return (
+    <section className="hero-landing-pane">
+      <div className="hero-grid-container">
+        
+        {/* Editorial Text Column */}
+        <div className="hero-narrative-block">
+          <div className="tagline-badge">
+            <span className="badge-dot"></span>
+            GLOBAL EXPANSION & BUSINESS IMMIGRATION
           </div>
-          <h1>
-            Connecting Established Businesses to Opportunities in the United States
+          
+          <h1 className="hero-main-title">
+            We architect U.S. market entry for global enterprises.
           </h1>
-          <p>
-            We build the legal, structural, and strategic frameworks that allow
-            established international brands, entrepreneurs, and investors to
-            successfully expand and operate in the U.S. market.
+          
+          <p className="hero-summary-paragraph">
+            Providing premium corporate structuring, cross-border tax strategy, and 
+            elite immigration pathways for established brands, corporate executives, and global investors.
           </p>
-          <div className="hero-actions">
+          
+          <div className="hero-action-cluster">
             <button
-              className="primary-btn"
-              onClick={() => {
-                window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank");
-              }}
+              className="btn-solid"
+              onClick={() => window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank")}
             >
-              Start an Inquiry
+              Start an Inquiry <HiArrowUpRight />
             </button>
             <button
-              className="secondary-btn"
+              className="btn-outline"
               onClick={() => navigate("/services")}
             >
-              Explore Our Services
+              Explore Services
             </button>
           </div>
         </div>
 
-        {/* Right Side: Hidden entirely on mobile/tablet */}
-        <div className="hero-visual">
-          <div className="framework-card card-primary">
-            <div className="card-badge">Phase 01</div>
+        {/* Bento Grid Visual Element Grid */}
+        <div className="hero-bento-visual">
+          <div className="bento-cell cell-featured">
+            <span className="cell-step">Phase 01</span>
             <h3>U.S. Entity Structuring</h3>
-            <p>Corporate formation, tax positioning, and governance alignment.</p>
+            <p>Corporate formation, multi-state tax architecture, and cross-border governance design.</p>
           </div>
-          <div className="framework-card card-secondary">
-            <div className="card-badge">Phase 02</div>
+          
+          <div className="bento-cell cell-standard">
+            <span className="cell-step">Phase 02</span>
             <h3>Immigration Pathways</h3>
-            <p>Strategic executive transfers and investor visa frameworks.</p>
+            <p>Strategic executive transfers and premium visa setups.</p>
           </div>
-        </div>
-      </div>
 
-      {/* Modernised Bottom Stats Bar */}
-      <div className="stats-bar-container">
-        <div className="container px-3 stats-grid">
-          <div className="stat-box">
-            <span className="stat-number">400+</span>
-            <span className="stat-label">Businesses Structured</span>
+          <div className="bento-cell cell-stat-hero">
+            <span className="bento-stat-num">400+</span>
+            <span className="bento-stat-desc">Entities Structured Worldwide</span>
           </div>
-          <div className="stat-box">
-            <span className="stat-number">100%</span>
-            <span className="stat-label">Independent Operation</span>
-          </div>
-          <div className="stat-box">
-            <span className="stat-number">Global</span>
-            <span className="stat-label">Expansion Focus</span>
+
+          <div className="bento-cell cell-stat-secondary">
+            <span className="bento-stat-num">100%</span>
+            <span className="bento-stat-desc">Compliance Rating Secured</span>
           </div>
         </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 import "../../styles/Navbar.css";
 import Logo from "../../assets/LogoW.png";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoClose } from "react-icons/io5";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { IoCloseOutline } from "react-icons/io5";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 30);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -26,89 +28,59 @@ const Navbar = () => {
   ];
 
   const handleNavClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setOpenDrawer(false);
   };
 
-  const location = useLocation();
-  const navigate = useNavigate();
   return (
     <>
-      {/* Desktop Navbar */}
-      <div className={`main-navbar${scrolled ? " scrolled" : ""}`}>
-        <nav className="container px-0 py-3 navbar">
-          <div className="logo">
-            <img width={110} src={Logo} alt="LawAid Logo" />
+      <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
+        <div className="nav-container">
+          <div className="brand-logo" onClick={() => navigate("/")}>
+            <img src={Logo} alt="LawAid Logo" />
           </div>
 
-          <div className="d-flex gap-4 align-items-center">
-            <ul className="nav-links">
+          <nav className="desktop-navigation">
+            <ul className="nav-menu-list">
               {navLinks.map((link) => (
-                <li
-                  key={link.name}
-                  className={location.pathname === link.path ? "active" : ""}
-                >
+                <li key={link.name} className={location.pathname === link.path ? "is-active" : ""}>
                   <Link to={link.path} onClick={handleNavClick}>
                     {link.name}
                   </Link>
                 </li>
               ))}
             </ul>
-
-            <button
-              className="consult-btn"
-              onClick={() => {
-                window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank");
-              }}
+            <button 
+              className="cta-action-btn"
+              onClick={() => window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank")}
             >
               Begin Consultation
             </button>
-          </div>
-        </nav>
-      </div>
+          </nav>
 
-      <div className={`mobile-navbar${scrolled ? " scrolled" : ""}`}>
-        <nav className="container px-0 navbar">
-          <div className="logo">
-            <img width={80} src={Logo} alt="LawAid Logo" />
-          </div>
+          <button className="mobile-toggle-btn" onClick={() => setOpenDrawer(true)} aria-label="Open Menu">
+            <HiMenuAlt3 size={24} />
+          </button>
+        </div>
+      </header>
 
-          <GiHamburgerMenu
-            color="#fff"
-            size={20}
-            onClick={() => setOpenDrawer(true)}
-            style={{ cursor: "pointer" }}
-          />
-        </nav>
-      </div>
-
-      {/* Overlay */}
-      {openDrawer && (
-        <div className="drawer-overlay" onClick={() => setOpenDrawer(false)} />
-      )}
-
-      {/* Drawer */}
-      <div className={`mobile-drawer ${openDrawer ? "open" : ""}`}>
-        <div className="drawer-header">
-          <span>Menu</span>
-          <IoClose
-            size={22}
-            style={{ cursor: "pointer" }}
-            onClick={() => setOpenDrawer(false)}
-          />
+      {/* Mobile Drawer Slide-out */}
+      <div className={`navigation-drawer ${openDrawer ? "is-open" : ""}`}>
+        <div className="drawer-inner-header">
+          <img src={Logo} alt="LawAid Logo" className="drawer-logo" />
+          <button className="drawer-close-btn" onClick={() => setOpenDrawer(false)}>
+            <IoCloseOutline size={28} />
+          </button>
         </div>
 
-        <ul className="drawer-links">
+        <ul className="drawer-menu-links">
           {navLinks.map((link) => (
-            <li
-              key={link.name}
-              className={location.pathname === link.path ? "active" : ""}
+            <li 
+              key={link.name} 
+              className={location.pathname === link.path ? "drawer-active-item" : ""}
               onClick={() => {
-                handleNavClick();
-                setOpenDrawer(false);
                 navigate(link.path);
+                handleNavClick();
               }}
             >
               <Link to={link.path}>{link.name}</Link>
@@ -116,15 +88,14 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button
-          onClick={() => {
-            window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank");
-          }}
-          className="drawer-btn"
+        <button 
+          onClick={() => window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank")}
+          className="drawer-cta-btn"
         >
           Begin Consultation
         </button>
       </div>
+      {openDrawer && <div className="drawer-backdrop-blur" onClick={() => setOpenDrawer(false)} />}
     </>
   );
 };
