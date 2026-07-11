@@ -1,71 +1,83 @@
+import React from "react";
 import "../../styles/LegalSupportSection.css";
-import Support from "../../assets/two.jpeg";
-import "../../styles/HeroSection.css";
-import Confidentiality from "../../assets/Confidentaility.svg"; // Can keep the same icons as they match corporate themes
+import Confidentiality from "../../assets/Confidentaility.svg"; 
 import User from "../../assets/User.svg";
 import Compliance from "../../assets/Compliance.svg";
+
+interface CustomStyle extends React.CSSProperties {
+  "--delay"?: string;
+}
 
 const LegalSupportSection = () => {
   return (
     <section className="legal-support-section">
-      <div className="container px-0 legal-support-content">
-        <div className="legal-support-left">
-          <div className="d-flex align-items-center">
+      <div className="legal-support-container">
+        {/* Left Side: Core Narrative & Strategy */}
+        <div className="legal-support-left animate-item" style={{ "--delay": "100ms" } as CustomStyle}>
+          <div className="subtitle-wrapper">
             <span className="subtitle-line"></span>
-            <span className="subtitle">U.S. MARKET ENTRY</span>
-          </div>{" "}
+            <span className="subtitle-tag">WHY FIRMS CHOOSE US</span>
+          </div>
+          
           <h2 className="main-heading">
-            Structured Global Expansion. Built for Established Brands.
+            Premium presentation backed by petition-focused substance.
           </h2>
+          
           <p className="description">
-            LawAid Management operates at the intersection of business immigration, corporate structuring, and international expansion. We support global business owners and investors by delivering structured expansion pathways, franchise frameworks, and dependable legal coordination across the U.S. market.
+            Every plan we write is structured around credibility, operational realism, and the strict standards USCIS actually applies. We sit right between low-cost generic writers and high-priced enterprise providers—combining premium quality, realistic financial modeling, and direct attorney collaboration in a modern, efficient process.
           </p>
+          
           <p className="description">
-            Unlike traditional consulting firms, LawAid Management provides an all-in-one, integrated framework. Our services are built to establish the legal, corporate, and structural foundation of your company—enabling your brand to scale and operate independently in the United States.
+            This approach is designed around visual blocks, comparison logic, and quick scanning rather than long, dry, report-style reading, effectively preserving and highlighting your core value proposition to adjudicators.
           </p>
+          
           <div className="features-list">
             <div className="feature-item">
               <div className="feature-icon">
-                <img src={Confidentiality} alt="Security Icon" />
+                <img src={Confidentiality} alt="Attorney Time Icon" />
               </div>
               <div className="feature-details">
-                <h3>Structured Frameworks</h3>
+                <h3>Attorney Time Stays Legal</h3>
                 <p>
-                  Comprehensive corporate setups, LLC/C-Corp structures, and state registrations handled seamlessly.
+                  We absorb the heavy business documentation workload so attorneys can stay entirely focused on legal analysis, filing strategy, and client counsel.
                 </p>
               </div>
             </div>
+
             <div className="feature-item">
               <div className="feature-icon">
-                <img src={User} alt="Independent Success Icon" />
+                <img src={User} alt="Stronger Plans Icon" />
               </div>
               <div className="feature-details">
-                <h3>Independent Operation</h3>
+                <h3>Stronger Than Client Drafts</h3>
                 <p>
-                  We build the pathways so that you can confidently own and operate your brand independently in the U.S.
+                  We replace weak, self-prepared drafts with professionally structured, highly credible documents that speak directly to core adjudication concerns.
                 </p>
               </div>
             </div>
+
             <div className="feature-item">
               <div className="feature-icon">
-                <img src={Compliance} alt="USCIS Standards Icon" />
+                <img src={Compliance} alt="Consistency Icon" />
               </div>
               <div className="feature-details">
-                <h3>Immigration & Compliance</h3>
+                <h3>Consistent Across Cases</h3>
                 <p>
-                  All corporate documentation meticulously aligned with business immigration and USCIS standards.
+                  Our reliable, premium support standard helps firms comfortably manage repeat E-2 and L-1 workflows with less variation and significantly lower risk.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="legal-support-right">
-          <img src={Support} alt="U.S. Corporate Office" className="main-image" />
-          <div className="stats-card">
-            <h3 className="stats-number">400+</h3>
-            <p className="stats-description">
-              Established businesses successfully structured in the United States
+        {/* Right Side: Showcase Card with deep depth and contrast */}
+        <div className="legal-support-right animate-item" style={{ "--delay": "300ms" } as CustomStyle}>
+          <div className="stats-showcase-card">
+            <span className="card-badge">APPLICATION DESIGN</span>
+            <h3 className="stats-number-title">Designed for Review</h3>
+            <div className="divider-line"></div>
+            <p className="stats-description-text">
+              USCIS aligned structures, realistic projections, and growth-ready strategic planning—built for review, not decoration.
             </p>
           </div>
         </div>

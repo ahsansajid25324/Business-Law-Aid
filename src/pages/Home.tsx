@@ -18,8 +18,8 @@ const Home = () => {
       <EndSection />
       <AdvantageSection />
       <StartedSection
-        title="Ready to Scale Your Brand to the United States?"
-        subtitle="Partner with LawAid Management to build the legal, corporate, and structural frameworks needed for a successful and independent U.S. market entry."
+        title="Ready to Build a USCIS-Compliant Business Plan?"
+        subtitle="Partner with Law Aid Management to combine premium writing, realistic financial modeling, and direct attorney collaboration into your E-2 or L-1 petition strategy."
       />
       <SemiContact />
       <Footer />

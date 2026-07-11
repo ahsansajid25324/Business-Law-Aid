@@ -6,7 +6,6 @@ import Icon2 from "../../assets/b.svg";
 import Icon3 from "../../assets/c.svg";
 import Icon4 from "../../assets/d.svg";
 import Icon5 from "../../assets/e.svg";
-import Icon6 from "../../assets/f.svg";
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -24,73 +23,61 @@ function useIsMobile() {
 
 const EndSection = () => {
   const isMobile = useIsMobile();
+  
   const cardData = [
     {
-      icon: <img src={Icon1} alt="International Expansion Consulting icon" />,
-      title: "International Expansion Consulting",
-      description:
-        "Comprehensive operational strategies to transition global concepts into the U.S. market.",
+      icon: <img src={Icon1} alt="Intake Clarity icon" />,
+      title: "1. Intake Clarity",
+      description: "We gather the facts that matter first, saving hours of unnecessary discovery.",
       items: [
-        "Market viability evaluation",
-        "Scale & adaptation analysis",
-        "Expansion roadmap design",
-        "Operational framework setup",
+        "Core company background",
+        "Investment source validation",
+        "Operational baseline metrics",
+        "Initial timeline targets",
       ],
     },
     {
-      icon: <img src={Icon2} alt="Franchise System Development icon" />,
-      title: "Franchise Development",
-      description:
-        "Structuring and formalizing successful brand models into turnkey franchise systems.",
+      icon: <img src={Icon2} alt="Case Framing icon" />,
+      title: "2. Case Framing",
+      description: "The entire business plan structure is strategically aligned with specific visa logic.",
       items: [
-        "Franchise licensing setup",
-        "Investor-ready documentation",
-        "Disclosure document support",
-        "Process standardization",
+        "E-2 / L-1 petition logic mapping",
+        "Substantial investment scaling",
+        "Executive & managerial scope",
+        "Adjudication risk analysis",
       ],
     },
     {
-      icon: <img src={Icon3} alt="U.S. Corporate Structuring icon" />,
-      title: "U.S. Corporate Structuring",
-      description: "Establishing bulletproof legal and entity frameworks across all U.S. jurisdictions.",
+      icon: <img src={Icon3} alt="Draft Build icon" />,
+      title: "3. Draft Build",
+      description: "Operational, market, and financial data sections are meticulously developed together.",
       items: [
-        "LLC & C-Corp formation",
-        "Operating agreements",
-        "State registrations & EIN",
-        "Corporate compliance setups",
+        "5-year financial projections",
+        "Local market analysis",
+        "Personnel hiring schedules",
+        "Role-by-role descriptions",
       ],
     },
     {
-      icon: <img src={Icon4} alt="Investment Structuring Pathways icon" />,
-      title: "Investment Structuring",
-      description: "Securing and organizing funding channels to satisfy strategic expansion targets.",
+      icon: <img src={Icon4} alt="Attorney Review icon" />,
+      title: "4. Attorney Review",
+      description: "Collaborative and targeted iterations to refine strategy before final output creation.",
       items: [
-        "Capital flow organization",
-        "Ownership structure models",
-        "Financial viability frameworks",
-        "Escrow & transaction setups",
+        "Legal framework cross-check",
+        "Fast, collaborative iteration",
+        "Workload burden relief",
+        "Evidentiary gap checks",
       ],
     },
     {
-      icon: <img src={Icon5} alt="Immigration-Compliant Coordination icon" />,
-      title: "Immigration-Compliant Design",
-      description: "Meticulous documentation aligned with strict business immigration regulations.",
+      icon: <img src={Icon5} alt="Submission Ready icon" />,
+      title: "5. Submission Ready",
+      description: "The final product fits seamlessly within the broader corporate legal petition package.",
       items: [
-        "USCIS-aligned business plans",
-        "Investment trail tracking",
-        "E-2, L-1, and EB-5 support docs",
-        "Regulatory file prep",
-      ],
-    },
-    {
-      icon: <img src={Icon6} alt="Strategic Client Management icon" />,
-      title: "Strategic Coordination",
-      description: "End-to-end management from initial evaluation to final U.S. establishment.",
-      items: [
-        "Project execution tracking",
-        "Partner legal team integration",
-        "Corporate milestone reviews",
-        "Independent owner handovers",
+        "White-label presentation layer",
+        "High-converting visual formatting",
+        "Final compliance verification",
+        "Print & digital formats",
       ],
     },
   ];
@@ -101,13 +88,13 @@ const EndSection = () => {
         <div className="set-margin">
           <div className="d-flex align-items-center">
             <span className="subtitle-line"></span>
-            <span className="subtitle">CORE SERVICES</span>
+            <span className="subtitle">OUR PROCESS</span>
           </div>{" "}
           <h2 className="main-heading text-white">
-            Comprehensive Corporate & Expansion Solutions
+            How We Build Submission-Ready Plans
           </h2>
           <p className="end-description text-white">
-            Providing the strategic, legal, and operational foundation that enables international businesses and investors to thrive independently in the United States.
+            A modern, efficient process designed to align operational realism with the strict legal and evidentiary framework applied by USCIS reviewers.
           </p>
         </div>
 

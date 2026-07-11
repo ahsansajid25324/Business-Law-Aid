@@ -52,9 +52,8 @@ const Navbar = () => {
             </ul>
             <button 
               className="cta-action-btn"
-              onClick={() => window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank")}
             >
-              Begin Consultation
+              Start an Enquiry
             </button>
           </nav>
 

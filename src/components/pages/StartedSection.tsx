@@ -21,20 +21,17 @@ const StartedSection = ({ title, subtitle }: StartedSectionProps) => {
           <h2 className="main-heading text-white">{title}</h2>
           <p className="started-description text-white">{subtitle}</p>
         </div>
-        <div className="hero-actions">
+        <div className="d-flex justify-content-center gap-3 mt-4">
           <button
             onClick={() => {
               window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank");
             }}
-            className="primary-btn"
+            className="btn-outline"
           >
             Start an Inquiry
           </button>
-          <button
-            className="secondary-btn"
-            onClick={() => navigate("/services")}
-          >
-            Explore Our Services
+          <button className="btn-solid" onClick={() => navigate("/pricing")}>
+            Request Pricing
           </button>
         </div>
       </div>
