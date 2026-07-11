@@ -46,6 +46,7 @@
 .footer-about img {
   height: 42px;
   width: auto;
+  max-width: 100%; /* 💡 Add this line to make it responsive */
   object-fit: contain;
   filter: brightness(1) contrast(1);
 }
