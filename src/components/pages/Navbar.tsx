@@ -22,7 +22,9 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
+    { name: "E2-Business Plans", path: "/e2-business" },
+    { name: "L1-Business Plans", path: "/l1-business" },
+
     { name: "Pricing", path: "/pricing" },
     { name: "Contact", path: "/contact" },
   ];
@@ -43,21 +45,24 @@ const Navbar = () => {
           <nav className="desktop-navigation">
             <ul className="nav-menu-list">
               {navLinks.map((link) => (
-                <li key={link.name} className={location.pathname === link.path ? "is-active" : ""}>
+                <li
+                  key={link.name}
+                  className={location.pathname === link.path ? "is-active" : ""}
+                >
                   <Link to={link.path} onClick={handleNavClick}>
                     {link.name}
                   </Link>
                 </li>
               ))}
             </ul>
-            <button 
-              className="cta-action-btn"
-            >
-              Start an Enquiry
-            </button>
+            <button className="cta-action-btn">Start an Enquiry</button>
           </nav>
 
-          <button className="mobile-toggle-btn" onClick={() => setOpenDrawer(true)} aria-label="Open Menu">
+          <button
+            className="mobile-toggle-btn"
+            onClick={() => setOpenDrawer(true)}
+            aria-label="Open Menu"
+          >
             <HiMenuAlt3 size={24} />
           </button>
         </div>
@@ -67,16 +72,21 @@ const Navbar = () => {
       <div className={`navigation-drawer ${openDrawer ? "is-open" : ""}`}>
         <div className="drawer-inner-header">
           <img src={Logo} alt="LawAid Logo" className="drawer-logo" />
-          <button className="drawer-close-btn" onClick={() => setOpenDrawer(false)}>
+          <button
+            className="drawer-close-btn"
+            onClick={() => setOpenDrawer(false)}
+          >
             <IoCloseOutline size={28} />
           </button>
         </div>
 
         <ul className="drawer-menu-links">
           {navLinks.map((link) => (
-            <li 
-              key={link.name} 
-              className={location.pathname === link.path ? "drawer-active-item" : ""}
+            <li
+              key={link.name}
+              className={
+                location.pathname === link.path ? "drawer-active-item" : ""
+              }
               onClick={() => {
                 navigate(link.path);
                 handleNavClick();
@@ -87,14 +97,21 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button 
-          onClick={() => window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank")}
+        <button
+          onClick={() =>
+            window.open("https://zfrmz.com/tmeXpeb2zZy1P8Dj9gTb", "_blank")
+          }
           className="drawer-cta-btn"
         >
           Begin Consultation
         </button>
       </div>
-      {openDrawer && <div className="drawer-backdrop-blur" onClick={() => setOpenDrawer(false)} />}
+      {openDrawer && (
+        <div
+          className="drawer-backdrop-blur"
+          onClick={() => setOpenDrawer(false)}
+        />
+      )}
     </>
   );
 };

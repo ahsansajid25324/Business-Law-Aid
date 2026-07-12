@@ -1,7 +1,7 @@
 /* About Page Accordion Stylesheet */
 .about-faq-section {
   background-color: #fdfbf7; /* Consistent Luxury Warm Off-White */
-  padding: 40px 0 100px 0;
+  /* padding: 40px 0 100px 0; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -113,7 +113,7 @@
   .faq-main-heading {
     font-size: 2rem;
   }
-  
+
   .faq-trigger {
     padding: 20px;
     font-size: 1.05rem;
@@ -126,8 +126,8 @@
   .faq-panel.panel-expanded {
     padding-bottom: 20px;
   }
-  
+
   .about-faq-section {
-    padding: 20px 0 64px 0;
+    padding: 0;
   }
 }

@@ -1,15 +1,14 @@
 import { lazy, Suspense, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-
-// 1. Implementation of React Lazy Loading
 const Home = lazy(() => import("./pages/Home"));
 const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Services = lazy(() => import("./pages/Services"));
-import "./App.css"; // Global styles for the app
+const E2Business = lazy(() => import("./pages/E2Business"));
+const L1Business = lazy(() => import("./pages/L1Business"));
+import "./App.css";
 
-// 2. High-end, theme-matched loading component
 const PageLoader = () => {
   return (
     <div className="loader-container">
@@ -27,7 +26,6 @@ const App = () => {
 
   return (
     <div>
-      {/* 3. Wrap your routes in Suspense and pass the custom loader */}
       <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -35,6 +33,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/e2-business" element={<E2Business />} />
+          <Route path="/l1-business" element={<L1Business />} />
         </Routes>
       </Suspense>
     </div>

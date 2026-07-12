@@ -58,7 +58,7 @@ const About = () => {
       <Vendor />
 
       {/* Structured Accordion FAQ Section */}
-      <section className="about-faq-section">
+      <section className="about-faq-section mb-5">
         <div className="about-faq-container">
           <div className="faq-header">
             <div className="subtitle-with-line justify-content-center">
