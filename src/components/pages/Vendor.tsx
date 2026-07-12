@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/Vendor.css";
 import "../../styles/HeroSection.css";
 import { Award, Clock, Coins, RotateCcw } from "lucide-react";
