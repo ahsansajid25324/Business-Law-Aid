@@ -9,6 +9,8 @@ import "./index.css";
 import "@splidejs/react-splide/css";
 import "./styles/Vendor.css";
 import "./styles/HeroSection.css";
+import "./styles/ServiceCarousel.css";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
