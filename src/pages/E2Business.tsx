@@ -7,7 +7,6 @@ import AboutBackground from "../assets/AboutBackground.png";
 import {
   ChevronDown,
   ChevronUp,
-  ArrowRight,
   CheckCircle2,
   Flag,
   DollarSign,
@@ -15,12 +14,12 @@ import {
   TrendingUp,
   HelpCircle,
   FolderOpen,
+  ArrowRight,
 } from "lucide-react";
 
 // Importing the dedicated stylesheet
 import "../styles/E2Business.css";
 import "../styles/AboutFaqs.css";
-
 
 const E2Business = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -81,11 +80,17 @@ const E2Business = () => {
               <span className="subtitle-tag">Petitioner Requirements</span>
             </div>
             <h2 className="main-heading">Eligibility Flowchart</h2>
-            <p className="description">
+            <p className="description mb-3">
               Your business plan must clear every legal gateway seamlessly to
               ensure adjudicators recognize the validity of the deployment
               ecosystem.
             </p>
+            <div>
+              <button className="btn-solid mb-3" >
+                <span>Request Pricing</span>
+                <ArrowRight size={16} />
+              </button>
+            </div>
 
             <div className="flow-steps-stack">
               {[
@@ -110,9 +115,6 @@ const E2Business = () => {
                   <div className="flow-step-card">
                     <h4>{step.title}</h4>
                     <p>{step.desc}</p>
-                  </div>
-                  <div className="flow-arrow-container">
-                    <ArrowRight size={20} className="flow-arrow" />
                   </div>
                 </div>
               ))}
@@ -184,8 +186,6 @@ const E2Business = () => {
             </h2>
           </div>
 
-          {/* 3-Step Overview Grid */}
-
           {/* 4 Core Pillars Grid */}
           <div className="e2-four-pillars-grid">
             <div className="bento-card card-dark">
@@ -234,8 +234,6 @@ const E2Business = () => {
           </div>
         </div>
       </section>
-
-      {/* Section 2: Interactive Flowcharts & Verification Checklists */}
 
       {/* Section 3: Industry Footprint Matrix */}
       <section className="e2-matrix-section">
@@ -314,7 +312,10 @@ const E2Business = () => {
         </div>
       </section>
 
-      <SemiContact />
+      {/* Added id anchor to catch the handleCtaClick smooth scrolling */}
+      <div id="contact-section">
+        <SemiContact />
+      </div>
       <Footer />
     </div>
   );

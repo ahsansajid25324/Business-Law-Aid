@@ -4,8 +4,17 @@ import OtherHero from "../components/pages/OtherHero";
 import Vendor from "../components/pages/Vendor";
 import Footer from "../components/pages/Footer";
 import AboutBackground from "../assets/AboutBackground.png";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronUp,
+  DollarSign,
+  Flag,
+  FolderOpen,
+  TrendingUp,
+} from "lucide-react";
 import "../styles/AboutFaqs.css";
+import EndSection from "../components/pages/EndSection";
+import SemiContact from "../components/pages/SemiContact";
 
 const About = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -57,8 +66,74 @@ const About = () => {
       />
       <Vendor />
 
+      <section className="e2-dark-section">
+        <div className="e2-dark-container">
+          <div className="faq-header text-center">
+            <div className="subtitle-with-line justify-content-center">
+              <span className="subtitle-line"></span>
+              <span className="subtitle font-accent">STRATEGIC ROADMAP</span>
+              <span className="subtitle-line"></span>
+            </div>
+            <h2 className="faq-main-heading text-white">
+              Frameworks Engineered for Approvals
+            </h2>
+          </div>
+
+          {/* 3-Step Overview Grid */}
+
+          {/* 4 Core Pillars Grid */}
+          <div className="e2-four-pillars-grid">
+            <div className="bento-card card-dark">
+              <div className="pillar-icon-wrapper">
+                <DollarSign size={24} />
+              </div>
+              <h3>Substantiality</h3>
+              <p>
+                We explain why the capital committed is meaningful relative to
+                the type and cost of the enterprise.
+              </p>
+            </div>
+
+            <div className="bento-card card-dark">
+              <div className="pillar-icon-wrapper">
+                <Flag size={24} />
+              </div>
+              <h3>Funds at Risk</h3>
+              <p>
+                We frame the commitment as real, deployed, and exposed to
+                business risk rather than merely intended.
+              </p>
+            </div>
+
+            <div className="bento-card card-dark">
+              <div className="pillar-icon-wrapper">
+                <TrendingUp size={24} />
+              </div>
+              <h3>Hiring and Growth</h3>
+              <p>
+                Staffing forecasts are tied to operations and revenue capacity,
+                not wishful planning.
+              </p>
+            </div>
+
+            <div className="bento-card card-dark">
+              <div className="pillar-icon-wrapper">
+                <FolderOpen size={24} />
+              </div>
+              <h3>Deliverables</h3>
+              <p>
+                Executive summary, market analysis, operations plan,
+                projections, investment analysis, and revision support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <SemiContact />
+      <EndSection />
+
       {/* Structured Accordion FAQ Section */}
-      <section className="about-faq-section mb-5">
+      <section className="about-faq-section my-5">
         <div className="about-faq-container">
           <div className="faq-header">
             <div className="subtitle-with-line justify-content-center">

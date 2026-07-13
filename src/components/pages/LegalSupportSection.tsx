@@ -27,9 +27,17 @@ const LegalSupportSection = () => {
             Every plan we write is structured around credibility, operational realism, and the strict standards USCIS actually applies. We sit right between low-cost generic writers and high-priced enterprise providers—combining premium quality, realistic financial modeling, and direct attorney collaboration in a modern, efficient process.
           </p>
           
-          <p className="description">
+          <p className="description mb-3">
             This approach is designed around visual blocks, comparison logic, and quick scanning rather than long, dry, report-style reading, effectively preserving and highlighting your core value proposition to adjudicators.
           </p>
+
+          {/* Call to Action Button */}
+          <div className="legal-support-cta">
+            <button className="btn-solid">
+             Start an Inquiry
+              <span className="cta-arrow">→</span>
+            </button>
+          </div>
           
           <div className="features-list">
             <div className="feature-item">
