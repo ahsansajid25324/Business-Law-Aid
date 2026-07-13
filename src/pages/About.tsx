@@ -4,14 +4,7 @@ import OtherHero from "../components/pages/OtherHero";
 import Vendor from "../components/pages/Vendor";
 import Footer from "../components/pages/Footer";
 import AboutBackground from "../assets/AboutBackground.png";
-import {
-  ChevronDown,
-  ChevronUp,
-  DollarSign,
-  Flag,
-  FolderOpen,
-  TrendingUp,
-} from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import "../styles/AboutFaqs.css";
 import EndSection from "../components/pages/EndSection";
 import SemiContact from "../components/pages/SemiContact";
