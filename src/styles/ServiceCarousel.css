@@ -67,7 +67,7 @@
 
 /* Splide */
 .splide {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .splide__slide {
@@ -126,7 +126,6 @@
   }
 
   .sc-testimonial {
-    margin-top: 16px;
     padding: 12px;
     font-size: 1rem;
   }
