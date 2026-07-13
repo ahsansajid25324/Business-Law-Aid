@@ -5,12 +5,13 @@ import OtherHero from "../components/pages/OtherHero";
 import PricingSet from "../components/pages/Pricing";
 import StartedSection from "../components/pages/StartedSection";
 import PricingBg from "../assets/PricingBg.png";
+
 const Pricing = () => {
   const heroData = {
     subtitle: "PRICING",
-    title: "Transparent, Predictable Pricing",
+    title: "Flexible Premium Pricing",
     description:
-      "Our pricing is designed to provide your business with predictable costs for immigration & business support services. All prices are per case and include comprehensive support within attorney-directed workflows.",
+      "Our pricing structures are designed around case complexity, visa category, and your specific timeline. Rather than forcing every matter into a rigid box, we offer premium, consultative packages tailored to the depth of research, strategic modeling, and attorney collaboration your case demands.",
   };
 
   return (
@@ -28,7 +29,7 @@ const Pricing = () => {
 
       <StartedSection
         title="Ready to Partner with LawAid Management?"
-        subtitle="Start with transparent pricing and scalable support designed specifically for immigration law firms and foreign businesses."
+        subtitle="Bring clarity to your next filing. Start with tailored pricing and consultative support designed specifically for custom immigration strategy."
       />
       <Footer />
     </>
