@@ -4,32 +4,34 @@ import ServiceCarousel from "./ServiceCarousel";
 import { CheckCircle2 } from "lucide-react";
 
 const Cost = () => {
+  // Updated with the new packages and pricing philosophy details
   const serviceCarouselData = [
     {
       icon: <CheckCircle2 />,
-      title: "No Hidden Fees",
+      title: "Basic Plan - Starting at $500",
       description:
-        "Transparent per-case pricing with no surprise charges or add-ons",
+        "Built for straightforward filings. Includes custom scope, financial model, and standard turnaround.",
     },
     {
       icon: <CheckCircle2 />,
-      title: "Family-Friendly",
+      title: "Custom Case Package",
       description:
-        "No additional charges for dependent cases—one price covers the entire family",
+        "Tailored to complexity with adjustments, expanded research, modeling, and strategic customization.",
     },
     {
       icon: <CheckCircle2 />,
-      title: "Scalable Solutions",
+      title: "Attorney Collaboration",
       description:
-        "Flexible capacity for high-volume periods without per-case rate increases",
+        "Direct coordination support, revision-driven workflow, and tight filing strategy alignment.",
     },
     {
       icon: <CheckCircle2 />,
-      title: "Custom Options",
+      title: "Specialized Expansions",
       description:
-        "Tailored pricing available for complex cases, unique firm requirements or for moving your business to the United States",
+        "Expedited priority delivery for tight deadlines, and Franchise Packages for layered structures.",
     },
   ];
+
   return (
     <section className="cost-section">
       <div className="container px-0 cost-content">
@@ -38,23 +40,21 @@ const Cost = () => {
             <span className="cost-line"></span>
             <span className="cost cost-right">
               {" "}
-              WHY CHOOSE LAWAID MANAGEMENT
+              FLEXIBLE PREMIUM PRICING
             </span>
             <span className="cost-line"></span>
           </div>{" "}
-          <h2 className="main-heading  text-center">
-            Predictable Costs, Measurable Value
+          <h2 className="main-heading text-center">
+            Flexible Pricing with Room for Case Complexity
           </h2>
           <p className="cost-description text-center">
-            Our pricing structure is designed to eliminate uncertainty and
-            provide businesses with scalable, cost-effective support that
-            enhances operational efficiency.
+            Rather than forcing every matter into a rigid package, we scope around visa category, industry complexity, staffing requirements, attorney involvement, speed, and documentation depth.
           </p>
         </div>
       </div>
       <ServiceCarousel
         data={serviceCarouselData}
-        testimonial="All services are delivered within attorney-controlled frameworks, ensuring legal strategy and client representation remain fully under attorney direction."
+        testimonial="Why is pricing flexible? Because a startup retail E-2, a franchise expansion, and an L-1 new office filing do not require the same level of research, modeling, or coordination."
       />
     </section>
   );
