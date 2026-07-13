@@ -99,15 +99,15 @@ const Pricing = () => {
           </ul>
         </div>
 
-        {/* Card 3: Franchise Expansion Package */}
+        {/* Card 3: Expedited Delivery Package */}
         <div className="general-pricing-card">
           <h4 className="card-title text-center m-auto mt-3">
-            FRANCHISE EXPANSION PACKAGE
+            EXPEDITED DELIVERY PACKAGE
           </h4>
           <h3 className="card-subtitle m-auto text-center mb-2">
-            Custom
+            +$250
           </h3>
-          <p className="card-desc m-auto text-center mb-3">layered structures</p>
+          <p className="card-desc m-auto text-center mb-3">add-on fee</p>
           <button
             className="card-btn"
             onClick={() => {
@@ -115,15 +115,15 @@ const Pricing = () => {
               setShowModal(true);
             }}
           >
-            Inquire Now
+            Rush Order
           </button>
 
           <ul className="card-list">
-            <li>For more layered corporate structures</li>
-            <li>Multi-unit expansion frameworks</li>
-            <li>Detailed expansion assumptions</li>
-            <li>Operational scaling log & tracking</li>
-            <li>Priority formatting & deep-dive research</li>
+            <li>When deadlines are tight</li>
+            <li>Priority assignment</li>
+            <li>Priority scheduling</li>
+            <li>Fast turnaround times</li>
+            <li>Rush workflow coordination</li>
           </ul>
         </div>
 
