@@ -6,13 +6,12 @@ import Connect from "../components/pages/Connect";
 import ContactImage from "../assets/ContactBg.png";
 
 const Contact = () => {
-  const heroData = {
+ const heroData = {
     subtitle: "GET IN TOUCH",
     title: "Connect with LawAid Management",
     description:
       "We partner with established international brands, business owners, and foreign investors to build the legal, corporate, and strategic foundations required for a successful U.S. market entry. Reach out to our consulting team to evaluate your concept and start your expansion journey.",
   };
-
 
   // df
   return (
